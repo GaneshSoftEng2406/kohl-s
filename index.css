@@ -538,3 +538,77 @@ text-align: center;
     background-image: url(https://media.kohlsimg.com/is/image/kohls/hp2-d-20220427-aapi-bkg);
     
 }
+
+#its{
+  
+    height: 370px;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 50px;
+    padding-left: 80px;
+
+}
+#wass{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid black; */
+    gap: 20px;
+    justify-content: space-around;
+}
+
+#wass h6{
+    font-size: 20px;
+    text-align: center;
+}
+#ams{
+    
+    height: 300px;
+    width: 90%;
+    /* border: 1px solid black; */
+    gap: 20px;
+    
+
+}
+#weres{
+    
+    height: 300px;
+    width: 90%;
+    /* border: 1px solid black; */
+ 
+}
+#iss{
+   
+    height: 300px;
+    width: 90%;
+    /* border: 1px solid blue; */
+    gap: 10px;
+   
+}
+#haves{
+    
+    height: 300px;
+    width: 90%;
+    /* border: 1px solid black; */
+    
+}
+#hass{
+    
+    height: 300px;
+    width: 90%;
+    /* border: 1px solid black; */
+    
+    
+}
+#wass p{
+color: red;
+text-align: center;
+
+}
+#hass p{
+    font-size: 20px;
+}
+#wass h1{
+    font-size: 50px;
+    text-align: center;
+}
