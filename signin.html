@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/77/0f/0c/770f0c498fe89b1ffcfce1aaa5fc72de.jpg"
+      type="image/x-icon"
+    />
+    <title>Kohl's | Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="signin.css">
+  </head>
+  
+  <body>
+       <div>
+        <div class="do1">
+            <p class="do1p"><strong>Free shipping</strong>  with $75 purchase. details <strong>Fast + free</strong> store pickup! details Spend your <strong>Kohl’s Cash® </strong>now. details</p>
+        </div>
+    </div>
+    <!-- logo with search bar  and other icons-->
+    <div class="lgbr">
+       
+        <div class="logo">
+            <a href="index.html"><img src="images/topsliders/logo.png" class="logoimg"/></a>
+        </div>
+        <div>
+                <input type="text" placeholder="&#128269;What are you looking for today?" class="searchbar">
+        </div>
+    
+        <div class="rightsidelogos" >
+            <a href="#">
+            <div class="logo">
+                <img src="images/topsliders/account.png" class="accountimg"/>
+            </div>
+
+            <!-- Hidden signin signup part -->
+
+            <div class="imgdata1">
+                <a href="#home" class="active" onclick="accFunction()"> <i></i><b style="font-size: 15px;">Account</b></a>
+                      <!-- Navigation links (hidden by default) -->
+                        <div id="accLinks">
+                            <div id="accLink">
+                                <div class="Atext">
+                                      <a href="signin.html">
+                                            <h4 style="color: black;">Sign in</h4>
+                                      </a>
+                                </div>
+                                <div class="Atext">
+                                      <a href="createAccount.html"><h4 style="color: black;">Create Account</h4>
+                                      </a>
+                                </div>
+                              </div>
+                        </div>  
+            </div>
+
+            <!-- Hidden signin signup ends -->
+
+        </a>
+        </div>
+        <div class="rightsidelogos" >
+            <a href="#">
+                <div class="logo">
+                    <img src="images/topsliders/shopping-cart.png" class="searchLO"/>
+                </div>
+                <div class="imgdata2">
+                    <p style="font-size: 14px;"><b id="cartvalue">Cart</b></p>
+                </div>
+            </a>
+        </div>
+            <div class="rightsidelogos" >
+                <a href="checkout.html">
+                    <div class="logo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/81/81464.png" class="searchLO"/>
+                    </div>
+                    <div class="imgdata2"><p style="font-size: 14px;">
+                        <b>Checkout</b></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--hamberger navbar-->
+        <div class="navbar">
+            <div class="leftnav">
+                <div><!-- Top Navigation Menu -->
+                    <div class="headNo">
+                      <a href="#home" class="active" onclick="myFunction()"> <i class="fa fa-bars"></i>shop by department</a>
+                      <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                            <a href="allproducts.html">New N Tranding</a>
+                            <a href="allproducts.html">Womens</a>
+                            <a href="allproducts.html">Men</a>
+                            <a href="allproducts.html">shoes</a>
+                            <a href="allproducts.html">Boys</a>
+                            <a href="allproducts.html">Girls</a>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="headNo"><i class="fa fa-star" aria-hidden="true"></i>My store: select store</div>
+                <div><i class="fa fa-usd"></i>Kohl’s Coupons</div>
+                <div><i class="fa fa-question-circle"></i>help</div>
+            </div>
+         
+        </div>
+
+   
+
+    <div id="signinContainer">
+      <div class="firstBox">
+        <div>
+          <h2>Sign In</h2>
+          <p class="SignIntext">
+            Sign in to your Kohls.com account to shop, check out or track your
+            order  and finish
+            enrolling in rewards..
+          </p>
+        </div>
+        <div class="signInInputBox">
+          <form id="myform">
+                <div>
+                  <p class="inptText">Email Address</p>
+                  <input
+                    type="email"
+                    placeholder=""
+                    class="inpBoxSize"
+                    id="email"
+                  />
+                </div>
+                <div>
+                  <p class="inptText">Password</p>
+                  <input
+                    type="password"
+                    class="inpBoxSize"
+                    placeholder=""
+                    id="password"
+                  />
+                  <div class="keep-me-sign-in-box">
+              
+                        <input type="checkbox" name="checkbox" id="checkbox"
+                      /></span>
+                          <label for="checkbox"><span style="    font-size: 12px;position: absolute; top: 8px; width: 230px;"> Keep me signed in</span></label>
+                      <div class="keep-me-sign-in-text">
+                        Check this box to stay signed in on this device. Recommended for
+                        devices that only you use.
+                      </div>
+                    </div>
+                </div>
+                <div>
+                  <input type="submit" id="submitBtn" onclick="signin(event)" value="SIGN IN">
+                </div>
+          </form>
+        </div>
+      </div>
+      <div class="line"></div>
+
+
+      <div class="secondBox">
+            <div>
+                  <h2>Create Account</h2>
+                  <p class="SignIntext">
+                        With a Kohls.com account, enjoy exclusive,
+                        benefits that make shopping faster and easier!
+                  </p>
+                </div>
+                <div id="secondSplit">
+                      <div class="imgFit">
+                            <img src="https://www.kohls.com/account/media/42.0.0-673/images/login_list.png" alt="">
+                      </div>
+                      <div class="enjoySec">
+                         <div><h3>Enjoy Express Checkout</h3></div>
+                         <div class="margintop"><h3>Enroll in Kohl's Rewards today</h3></div>
+                         <div class="margintop"><h3>Print Kohl's Cash</h3></div>
+                         <div class="margintop"><h3>Track orders easily</h3></div>
+                      </div>
+                </div>
+                <div style="margin-top: 60px;">
+                  <input type="submit" id="createAccBtn" value="CREATE ACCOUNT" onclick="window.location='createAccount.html'";>
+                </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer">
+
+    <div class="col1">
+        <div><strong>CUSTOMER SERVICE</strong></div>
+        <div>Contact Us</div>
+        <div>Shipping</div>
+        <div>Returns</div>
+        <div>Rebates</div>
+        <div>Recalls</div>
+        <div>Product Guides</div>
+        <div>Kohl’s Cash</div>
+    </div>
+    <div class="col1">
+        <div><strong></strong>shop KOHL's</div>
+        <div><strong style="color: rgb(68, 59, 68);font-size: 15px;">Get 15% off when you<br>sign up for our emails</strong>
+            </div>
+        <div>My Lists</div>
+        <div>  Site Map</div>
+        <div>Store Locator</div>
+        <div>Gift Cards</div    >
+        <div>Kohl’s Coupons</div>
+    </div>
+    <div class="col1">
+        <div><strong></strong>MY ACCOUNT</div>
+        <div> Sign In</div>
+        <div> My Account</div>
+        <div>Update Password</div>
+        <div>Order Status</div>
+        <div>Rewards</div>
+        <div>Gift Card Balance &
+            Kohl’s Cash Balance</div>
+    </div>
+    <div class="col1">
+        <div><strong></strong>CUSTOMER SERVICE</div>
+        <div>Contact Us</div>
+        <div>Shipping</div>
+        <div>Returns</div>
+        <div>Rebates</div>
+        <div>Recalls</div>
+        <div>Product Guides</div>
+        <div>Kohl’s Cash</div>
+    </div>
+    <div class="col1">
+        <div><strong></strong>CUSTOMER SERVICE</div>
+        <div>Contact Us</div>
+        <div>Shipping</div>
+        <div>Returns</div>
+        <div>Rebates</div>
+        <div>Recalls</div>
+        <div>Product Guides</div>
+        <div>Kohl’s Cash</div>
+    </div>
+    </footer>
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function accFunction(){
+          let y = document.getElementById("accLink");
+          if(y.style.display === "block"){
+                y.style.display = "none";
+          } else {
+                y.style.display = "block"
+          }
+    }
+
+    function signin(e){
+      e.preventDefault();
+      let myForm = document.getElementById("myform");
+      let email = myForm.email.value;
+      let password = myForm.password.value;
+
+      let all_users = JSON.parse(localStorage.getItem("users"))
+
+      all_users.forEach(function (user) {
+            if(email === user.email && password === user.password){
+              alert("Sign In Succesful")
+                  window.location.href = "index.html"
+                  
+            } else if (email !== user.email && password === user.password) {
+                  alert("Incorrect email!")
+            } else if (email === user.email && password !== user.password) {
+               alert("Incorrect password")
+            } else {
+              alert("Not yet register!")
+            }
+      })
+
+      alert("Sign in completed")
+    }
+  </script>
+</html>

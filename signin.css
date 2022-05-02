@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   .do1{
+      background-color:#eeeeee;
+      width: auto;
+      font-size: 20px;
+      height: 30px;
+      margin: auto;
+      text-align: center;
+      /* box-sizing: border-box; */
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      margin-top: 5px;
+      border-bottom: 1px solid black;
+      padding-top: 5px;
+  }
+  .do1p{
+      margin-top: 3px;
+  }
+
+  .txt{
+      position: absolute;
+      top: 17px;
+      left: 50px;
+  }
+  .do1{
+      background-color:#eeeeee;
+      width: auto;
+      font-size: 20px;
+      height: 30px;
+      margin: auto;
+      text-align: center;
+      /* box-sizing: border-box; */
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      margin-top: 5px;
+      border-bottom: 1px solid black;
+      padding-top: 5px;
+  }
+  .do1p{
+      margin-top: 3px;
+  }
+
+  .logo {
+      margin-bottom: 12px;
+  }
+  .active{
+      font-weight: bolder;
+  }
+
+  .lgbr{
+      height:70px;
+      width:auto;
+      border-bottom:1px solid black ;
+      display: flex;
+      position: sticky;
+  }
+
+  .logoimg{
+      width: 140px;
+      padding-top: 30px;
+      padding-left: 10px;
+  }
+  .searchbar{
+      width: 500px;
+      margin-left: 50px; 
+      margin-top: 15px;
+      border-radius: 5px;
+      padding: 9px;
+  }
+  .accountimg{
+      width: 35px;
+      height: 35px;
+      margin-top: 10px;
+      margin-left: 380px;
+      margin-right: 40px;
+  }
+
+  .searchLO{
+      width: 40px;
+      margin-top: 10px;
+      margin-right: 30px;
+  }
+  .imgdata1{
+      text-align: center;
+      margin-top:-13px;
+      margin-left: 341px;
+
+  }
+  .imgdata2{
+      text-align: center;
+      margin-top:-18px;
+      margin-left:-15px;
+
+  }
+  .rightsidelogos{
+      display:inline-block;
+  }
+
+  
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  .navbar{
+      background-color: rgb(255, 255, 255);
+      height: 30px;
+      border-bottom: 1px solid black;
+      position: static;
+  }
+  .leftnav{
+      display: grid;
+      grid-template-columns: 250px 250px 250px 250px;
+      height: 30px;
+      width: 50%;
+      /* margin-top: 10px; */
+   }
+   .leftnav>div:nth-child(2){
+       margin-top: 3px;
+   }
+  .leftnav>div:nth-child(3),.leftnav>div:nth-child(4){
+      margin-left: 400px;
+      width: 180px;
+      margin-top: 3px;
+  } 
+  .headNo {
+  overflow: hidden;
+  position: relative;
+  }
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .headNo #myLinks {
+      display: none;
+      background-color: beige;
+      }
+
+      /*Hide the Account links*/
+
+  #accLink {
+        padding: 10px;
+        margin: 10px;
+    display: none;
+    background-color: beige;
+  }
+  .Atext{
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bolder;
+  }
+
+      /* Style navigation menu links */
+      .headNo a {
+      color: rgb(0, 0, 0);
+      padding: 3px 10px;
+      text-decoration: none;
+      font-size: 22px;
+      display: block;
+      }
+
+      /* Style the hamburger menu */
+      .headNo a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+
+  /*//////////////// css for signin section //////////////////*/
+  
+  #signinContainer {
+    font-family: helvetica, arial, sans-serif;
+    width: 60%;
+    height: 500px;
+    margin: 30px auto;
+    display: flex;
+  }
+  .firstBox {
+    width: 80%;
+    height: 80%;
+    margin-right: 50px;
+  }
+  
+  .line {
+    height: 450px;
+    border: 1px solid gray;
+    margin: auto;
+  }
+  .secondBox {
+    width: 80%;
+    height: 80%;
+  }
+  .SignIntext {
+    font-size: 14px;
+    color: #464646;
+  }
+  .inpBoxSize {
+    width: 275px;
+    height: 37px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    border-radius: 0px;
+    outline-color: rgb(37, 127, 245);
+  }
+  .inptText {
+        font-weight: bolder;
+        font-size: 14px;
+        margin-top: 18px;
+        margin-bottom: 4px;
+  }
+  .keep-me-sign-in-text {
+    font-size: 12px;
+    width: 230px;
+    margin-top: 2%;
+    margin-left: 2%;
+    color: #464646;
+  }
+  .keep-me-sign-in-box {
+    width: 280px;
+    float: left;
+    position: relative;
+    margin-top: 15px;
+  }
+  #checkbox {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    margin-left: 0%;
+  }
+  #submitBtn{
+        margin-top: 25px;
+    cursor: pointer;
+    background-color: #95c96f;
+    font-size: 18px;
+    width: 280px;
+    color: #fff;
+    padding: 12px;
+  }
+  .secondBox{
+        width: 80%;
+        height: 80%;
+        margin-left: 50px;
+  }
+  #secondSplit{
+        display: flex;
+  }
+  .imgFit{
+        width: 20%;
+        height: 200px;
+  }
+  .enjoySec{
+        width: 80%;
+        height: 200px;
+  }
+  .margintop{
+        margin-top: 23px;
+  }
+  .enjoySec div>:nth-child(1) {
+        margin-top: 10px;
+  }
+  #createAccBtn{
+    margin-top: 0px;
+    cursor: pointer;
+    background-color: #95c96f;
+    font-size: 18px;
+    width: 280px;
+    color: #fff;
+    padding: 12px;
+  }
+  img{
+     width: 100%;
+  }
+
+  /* footer */
+  footer{
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      margin: auto;
+      text-align: justify;
+      margin-top: 100px;
+      background-color: #f0f0f0;
+      
+  }
+  .col1{
+      line-height: 35px;
+  }
+
+  #products{
+          margin: 5% 5% 5% 5%;
+          height: 380px;
+          display: grid;
+          grid-template-columns: 18% 18% 18% 18% 18%;
+          grid-gap: 5%;
+          justify-content: center;
+          padding-left: 10px;
+      }
+      #products > div > img{
+          width: 99%;
+          /* border: 1px solid black; */
+          border-bottom: 1px solid black;
+      }
+      #products > div {
+          border: 1px solid black;
+      }
+      #products > div > button{
+          height: 30px;
+          background-color: #14718A;
+          color: #fff;
+          width: 99%;
+          margin-left: 1px;
+      }
+      #products > div > p{
+          color: #373d3f;
+      }
+      .trending-product{
+          background-color: rgb(192, 192, 192);
+          font-size: 30px;
+          padding-left: 10px;
+      }
+      .footer > .col1 :hover{
+          color: rgb(255, 162, 75);
+          font-size: 100%;
+      }

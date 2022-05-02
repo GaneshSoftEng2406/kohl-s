@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/77/0f/0c/770f0c498fe89b1ffcfce1aaa5fc72de.jpg"
+      type="image/x-icon"
+    />
+    <title>Kohl's| Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+        
+        .div1{
+        background-color:#eeeeee;
+        width: auto;
+        font-size: 20px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        /* box-sizing: border-box; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin-top: 5px;
+        border-bottom: 1px solid black;
+        padding-top: 5px;
+    }
+    .div1p{
+        margin-top: 3px;
+    }
+
+    .txt{
+        position: absolute;
+        top: 17px;
+        left: 50px;
+    }
+    .div1{
+        background-color:#eeeeee;
+        width: auto;
+        font-size: 20px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        /* box-sizing: border-box; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin-top: 5px;
+        border-bottom: 1px solid black;
+        padding-top: 5px;
+    }
+    .div1p{
+        margin-top: 3px;
+    }
+
+    .logo {
+        margin-bottom: 12px;
+    }
+    .active{
+        font-weight: bolder;
+    }
+
+    .logobar{
+        height:70px;
+        width:auto;
+        border-bottom:1px solid black ;
+        display: flex;
+        position: sticky;
+    }
+
+    .logoimg{
+        width: 140px;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .searchbar{
+        width: 500px;
+        margin-left: 50px; 
+        margin-top: 15px;
+        border-radius: 5px;
+        padding: 9px;
+    }
+    .accountimg{
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 380px;
+        margin-right: 40px;
+    }
+
+    .shoppingcartlogo{
+        width: 40px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+    .imgdata1{
+        text-align: center;
+        margin-top:-13px;
+        margin-left: 341px;
+
+    }
+    .imgdata2{
+        text-align: center;
+        margin-top:-18px;
+        margin-left:-15px;
+
+    }
+    .rightsidelogos{
+        display:inline-block;
+    }
+
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .navbar{
+        background-color: rgb(255, 255, 255);
+        height: 30px;
+        border-bottom: 1px solid black;
+        position: static;
+    }
+    .leftnav{
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        height: 30px;
+        width: 50%;
+        /* margin-top: 10px; */
+     }
+     .leftnav>div:nth-child(2){
+         margin-top: 3px;
+     }
+    .leftnav>div:nth-child(3),.leftnav>div:nth-child(4){
+        margin-left: 400px;
+        width: 180px;
+        margin-top: 3px;
+    } 
+    .topnav {
+    overflow: hidden;
+    position: relative;
+    }
+
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+        display: none;
+        background-color: beige;
+        }
+
+        /*Hide the Account links*/
+
+    #accLink {
+          padding: 10px;
+          margin: 10px;
+      display: none;
+      background-color: beige;
+    }
+    .Atext{
+      letter-spacing: 1px;
+      color: black;
+      font-weight: bolder;
+    }
+
+        /* Style navigation menu links */
+        .topnav a {
+        color: rgb(0, 0, 0);
+        padding: 3px 10px;
+        text-decoration: none;
+        font-size: 22px;
+        display: block;
+        }
+
+        /* Style the hamburger menu */
+        .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+  
+
+    /* ///////css for create account///////////// */
+
+    #signupContainer {
+      font-family: helvetica,arial,sans-serif;
+      width: 60%;
+      height: 370px;
+      margin: 40px auto;
+    }
+    #signupinptBox {
+      font-family: 'Gotham 5r'
+    }
+    #myform {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+    }
+    .inpBoxSize {
+      width: 275px;
+      height: 37px;
+      border: 1px solid #ccc;
+      padding-left: 5px;
+      border-radius: 0px;
+      outline-color: rgb(37, 127, 245);
+    }
+    .inptText {
+          font-weight: bolder;
+          font-size: 14px;
+          margin-top: 18px;
+          margin-bottom: 4px;
+    }
+    .keep-me-sign-in-text {
+      font-size: 12px;
+      width: 230px;
+      margin-top: 2%;
+      margin-left: 2%;
+    }
+    .keep-me-sign-in-box {
+      width: 280px;
+      float: left;
+      position: relative;
+      margin-top: 15px;
+    }
+    #checkbox {
+      cursor: pointer;
+      width: 26px;
+      height: 26px;
+      margin-left: 0%;
+    }
+    .passRequirement{
+          width: 275px;
+          background-color: #F0EFED;
+          margin-top: -15px;   
+    }
+    .passRequirement-text{
+      font-weight: bolder;
+      color: gray;
+      font-size: 15px;
+    }
+    
+    .line{
+      
+      width: 60%;
+      border: 1px solid gray;
+      margin: 20px auto;
+    }
+
+    #kohlReward{
+      width: 60%;
+      margin: auto;
+      height: 80px
+    }
+    .rewardcheckbox{
+          margin-top: 15px;
+          display: flex;
+          
+    }
+    #rewardcheckb{
+      cursor: pointer;
+          width: 20px;
+          height: 20px;
+    }
+    #submitSection{
+      width: 60%;
+      margin: auto;
+      height: fit-content;
+    }
+    .discountText{
+      font-family: 'Gotham 7r',Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: bolder;
+    }
+    #privacyCheckbox{
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+    }
+    #submitBtn{
+      cursor: pointer;
+      background-color: #95c96f;
+      font-size: 18px;
+      width: 280px;
+      color: #fff;
+      padding: 12px;
+    }
+  </style>
+  <body>
+    <!--free shipping div bar-->
+    <div>
+      <div class="div1">
+        <p class="div1p">
+          <strong>Free shipping</strong> with $75 purchase. details
+          <strong>Fast + free</strong> store pickup! details Spend your
+          <strong>Kohl’s Cash® </strong>now. details
+        </p>
+      </div>
+    </div>
+    <!-- logo with search bar  and other icons-->
+    <div class="logobar">
+      <div class="logo">
+        <a href="index.html"><img src="images/topsliders/logo.png" class="logoimg" /></a>
+      </div>
+      <div>
+        <input
+          type="text"
+          placeholder="&#128269;What are you looking for today?"
+          class="searchbar"
+        />
+      </div>
+
+      <div class="rightsidelogos">
+        <a href="#">
+          <div class="logo">
+            <img src="images/topsliders/account.png" class="accountimg" />
+          </div>
+
+                      <!-- Hidden signin signup part -->
+
+                      <div class="imgdata1">
+                        <a href="#home" class="active" onclick="accFunction()"> <i></i><b style="font-size: 15px;">Account</b></a>
+                              <!-- Navigation links (hidden by default) -->
+                                <div id="accLinks">
+                                    <div id="accLink">
+                                        <div class="Atext">
+                                              <a href="signin.html">
+                                                    <h4 style="color: black;">Sign in</h4>
+                                              </a>
+                                        </div>
+                                        <div class="Atext">
+                                              <a href="createAccount.html"><h4 style="color: black;">Create Account</h4>
+                                              </a>
+                                        </div>
+                                      </div>
+                                </div>  
+                    </div>
+        
+                    <!-- Hidden signin signup ends -->
+
+        </a>
+      </div>
+      <div class="rightsidelogos">
+        <a href="cart.html">
+          <div class="logo">
+            <img
+              src="images/topsliders/shopping-cart.png"
+              class="shoppingcartlogo"
+            />
+          </div>
+          <div class="imgdata2">
+            <p style="font-size: 15px"><b><strong>cart</strong></b></p>
+          </div>
+        </a>
+      </div>
+      <div class="rightsidelogos">
+        <a href="checkout.html">
+          <div class="logo">
+            <img
+              src="images/topsliders/shopping-cart.png"
+              class="shoppingcartlogo"
+            />
+          </div>
+          <div class="imgdata2">
+            <p style="font-size: 14px">
+              <b>Checkout</b>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="leftnav">
+        <div>
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+            <a href="#home" class="active" onclick="myFunction()">
+              <i class="fa fa-bars"></i>shop by department</a
+            >
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="allproducts.html">New N Tranding</a>
+              <a href="allproducts.html">Womens</a>
+              <a href="allproducts.html">Men</a>
+              <a href="allproducts.html">shoes</a>
+              <a href="allproducts.html">Boys</a>
+              <a href="allproducts.html">Girls</a>
+            </div>
+          </div>
+        </div>
+        <div class="topnav">
+          <i class="fa fa-star" aria-hidden="true"></i>My store: select store
+        </div>
+        <div><i class="fa fa-usd"></i>Kohl’s Coupons</div>
+        <div><i class="fa fa-question-circle"></i>help</div>
+      </div>
+      <!-- <div class="rightnav">
+                
+            </div> -->
+    </div>
+    <!-- Create account form Starts -->
+    <div id="signupContainer">
+      <div>
+        <h2>Create Account</h2>
+        <p>
+          By creating an account, you agree to Kohl's Security & Privacy Policy
+          and Legal Notices.
+        </p>
+      </div>
+      <div class="signupinptBox">
+        <form name="Myform" id="myform">
+          <div>
+            <p class="inptText">First Name</p>
+            <input class="inpBoxSize" type="text" id="Fname" />
+          </div>
+          <div>
+            <p class="inptText">Last Name</p>
+            <input type="text" class="inpBoxSize" id="Lname" />
+          </div>
+          <div>
+            <p class="inptText">Email Address</p>
+            <input
+              type="email"
+              placeholder="name@mail.com"
+              class="inpBoxSize"
+              id="email"
+              style="margin-left: -280px;"
+            />
+            <div class="keep-me-sign-in-box" style="margin-top: 60px;">
+              
+                <input type="checkbox" name="checkbox" id="checkbox"
+              /></span>
+                  <label for="checkbox"><span style="    font-size: 12px;position: absolute; top: 8px; width: 230px;"> Keep me signed in</span></label>
+              <div class="keep-me-sign-in-text" style="margin-top: 10px;">
+                Check this box to stay signed in on this device. Recommended for
+                devices that only you use.
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="inptText">Password</p>
+            <input
+              type="password"
+              class="inpBoxSize"
+              placeholder="Should not be same as email or login"
+              id="password"
+            />
+          
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Create account form ends -->
+     <div class="line"></div>
+    <!-- khols Rewards section starts -->
+    <div id="kohlReward">
+       <div>
+             <img src="https://www.kohls.com/account/media/42.0.0-673/images/loyaltyV2/kohls-rewards-horizontal.png" alt="">
+       </div>
+       <div class="rewardcheckbox">
+         <div>
+               <input type="radio" name="rewardcheck" id="rewardcheckb" onclick="onlyOne(this)">
+               <label for="radio"><span>
+                     I signed up in store
+               </span></label>
+         </div>
+         <div>
+            <input type="radio" name="rewardcheck" id="rewardcheckb" onclick="onlyOne(this)">
+            <label for="radio"><span>
+                  Enroll Today!
+            </span></label>
+      </div>
+      <div>
+            <input type="radio" name="rewardcheck" id="rewardcheckb" onclick="onlyOne(this)">
+            <label for="radio"><span>
+                  No thanks!
+            </span></label>
+      </div>
+       </div>
+    </div>
+    <div class="line"></div>
+    <!-- khols Rewards section ends -->
+    <!-- submit section starts -->
+    <div id="submitSection">
+      <div><p class="discountText">Stay in the loop + save 15% on your next purchase.</p></div>
+      <div>
+        <input type="checkbox" id="privacyCheckbox">
+      </div>
+      <div>
+        <label for="checkbox">
+          Yes, sign me up for emails that deliver our best deals and the newest styles, including all the tips & tricks to make shopping even easier. <br>
+          <p class="passRequirement-text">US Residents Only. Terms apply; see details. Privacy Policy.</p>
+        </label>
+      </div>
+      <div>
+       <a href="./signin.html"> <input type="submit" id="submitBtn" onclick="signup(event)" value="CREATE ACCOUNT" > </a>
+      </div>
+    </div>
+    <!-- submit section ends -->
+  </body>
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function accFunction(){
+          let y = document.getElementById("accLink");
+          if(y.style.display === "block"){
+                y.style.display = "none";
+          } else {
+                y.style.display = "block"
+          }
+    }
+
+
+    function signup(e){
+      e.preventDefault();
+      let myForm = document.getElementById("myform");
+      let Fname = myForm.Fname.value;
+      let Lname = myForm.Lname.value;
+      let email = myForm.email.value;
+      let password = myForm.password.value;
+
+      if(localStorage.getItem("users") === null){
+        localStorage.setItem("users", JSON.stringify([]))
+      }
+
+      let user = {
+      Fname,
+      Lname,
+      email,
+      password
+    };
+
+    alert("Account created sucessfully")
+
+    
+     let arr = JSON.parse(localStorage.getItem("users"))
+     arr.push(user);
+    console.log(arr)
+
+
+
+
+    localStorage.setItem("users",JSON.stringify(arr))
+     myForm.reset()
+     myForm.value = '';
+     window.location.href = "signin.html"
+    
+    } 
+
+    
+
+    //function for clicking any one reward checkbox
+    function onlyOne(checkbox){
+      let checkboxes = document.getElementsByName("rewardcheck")
+      checkboxes.forEach((item) => {
+        if(item !== checkbox) item.checked = false
+      })
+    }
+  </script>
+</html>
