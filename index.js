@@ -100,16 +100,7 @@ function myFunction() {
   // console.log(kohl_cart) 
   alert("Product Added into Cart")
   
-    // kohl_cart.forEach(function(product){
-    //     // console.log(typeof product.price)
-    //     sum=sum+Number(product.price)
-    //     counter++;
-    // });
-    // console.log((Math.floor(sum)))
-    // let par=document.getElementById("products");
-    // let sum1=document.createElement("p");
-    // // sum1.textContent=sum;
-    // par.append(sum1)
+  
   }
   
   

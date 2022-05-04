@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = 
+    "https://i.pinimg.com/originals/77/0f/0c/770f0c498fe89b1ffcfce1aaa5fc72de.jpg" 
+            type = "image/x-icon">
+    <title>kohl's Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+    <link rel="stylesheet" href="myproducts.css">
+
+</head>
+<body>
+    <div>
+        <div class="div1">
+            <p class="div1p"><strong>Free shipping</strong>  with $75 purchase. details <strong>Fast + free</strong> store pickup! details Spend your <strong>Kohl’s Cash® </strong>now. details</p>
+        </div>
+    </div>
+
+    <div class="header" id="myHeader" style="background-color: white;">
+        <div>
+            <div class="logobar">
+           
+                <div class="logo">
+                    <a href="index.html"><img src="images/topsliders/logo.png" class="logoimg"/></a>
+                </div>
+                <div>
+                        <input type="text" placeholder="&#128269;What are you looking for today?" class="searchbar">
+                </div>
+            
+                <div class="rightsidelogos" >
+                    <a href="#">
+                    <div class="logo">
+                       <a href=""><img src="images/topsliders/account.png" class="accountimg"/></a>
+                    </div>
+                     <!-- Hidden signin signup part -->
+
+            <div class="imgdata1">
+                <a href="#home" class="active" onclick="accFunction()"> <i></i><b style="font-size: 15px;">Account</b></a>
+                      <!-- Navigation links (hidden by default) -->
+                        <div id="accLinks">
+                            <div id="accLink">
+                                <div class="Atext">
+                                      <a href="signin.html">
+                                            <h4 style="color: black;    margin: 10px;
+                                            padding: 10px;">Sign in</h4>
+                                      </a>
+                                </div>
+                                <div class="Atext">
+                                      <a href="createAccount.html"><h4 style="color: black;">Create Account</h4>
+                                      </a>
+                                </div>
+                              </div>
+                        </div>  
+            </div>
+
+          
+                </a>
+                </div>
+                <div class="rightsidelogos" >
+                    <a href="cart.html">
+                        <div class="logo">
+                            <img src="images/topsliders/shopping-cart.png" class="shoppingcartlogo"/>
+                        </div>
+                        <div class="imgdata2" id="cartvalue">
+                            <p style="font-size: 14px;"><b >Cart</b></p>
+                        </div>
+                    </a>
+                </div>
+                    <div class="rightsidelogos" >
+                        <a href="#">
+                            <div class="logo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/81/81464.png" class="shoppingcartlogo"/>
+                            </div>
+                            <div class="imgdata2"><p style="font-size: 14px;">
+                              <a href="checkout.html"><b>Checkout</b></p></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--hamberger navbar-->
+                <div class="navbar">
+                    <div class="leftnav">
+                        <div><!-- Top Navigation Menu -->
+                            <div class="topnav">
+                              <a href="#home" class="active" onclick="myFunction()"> <i class="fa fa-bars"></i>shop by department</a>
+                              <!-- Navigation links (hidden by default) -->
+                                <div id="myLinks">
+                                    <a href="#">For the home</a>
+                                    <a href="#">Womens</a>
+                                    <a href="#">Men</a>
+                                    <a href="#">Juniors</a>
+                                    <a href="#">Mens Big &Tall</a>
+                                    <a href="#">shoes</a>
+                                    <a href="#">Junior&Toys</a>
+                                    <a href="#">Baby</a>
+                                    <a href="#">Bed&Bath</a>
+                                    <a href="#">Outdoor Living</a>
+                                    <a href="#">Furniture&Decore</a>
+                                    <a href="#">Jewellery&accessory</a>
+                                    <a href="#">Beauty & SEPHORA</a>
+                                    <a href="#">Active&Wellness</a>
+                                    <a href="#">Sports Fan</a>
+                                    <a href="#">Nwe & Trending</a>
+                                    
+                                </div>                      
+                            </div>
+                        </div>
+                        <div class="topnav"><i class="fa fa-star" aria-hidden="true"></i>My store: select store</div>
+                        <div><i class="fa fa-usd"></i>Kohl’s Coupons</div>
+                        <div><i class="fa fa-question-circle"></i>help</div>
+                    </div>
+                    <!-- <div class="rightnav">
+                        
+                    </div> -->
+                </div>
+        </div>
+    </div>
+
+    <div id="mainsection">
+        <div id="leftsection">
+           <h1>KOHL's </h1><h5>Store</h5>
+            <h4>Filters</h4>
+            <hr>
+            
+            <h4>Departments</h4>
+            
+            <div>
+            <input type="radio" onchange="mens()" class="checkbx">
+            <label>Men</label>
+        </div>
+        <div>
+            <input type="radio" onchange="womens()" class="checkbx">
+            <label>Women</label>
+        </div>
+        <div>
+            <input type="radio" onchange="Junior()" class="checkbx">
+            <label>Junior </label>
+        </div>
+
+
+
+        <div>
+            <input type="radio" onchange="Boys()" class="checkbx">
+            <label>Boys </label>
+        </div>
+
+        <div>
+            <input type="radio" onchange="Girls()" class="checkbx">
+            <label>Girls </label>
+        </div>
+
+
+        <div>
+            <input type="radio" onchange="Electronics()" class="checkbx">
+            <label>Electronics </label>
+        </div>
+        <hr>
+        <h4>Sort</h4>
+       
+        <div>
+            <input type="radio" onchange="LtoH()" class="checkbx">
+            <label>Price Low To High </label>
+        </div>
+        <div>
+            <input type="radio" onchange="HtoL()" class="checkbx">
+            <label>Price High To Low</label>
+        </div>
+        <hr>
+        <h4>Available Products</h4>
+        <div>
+            <input type="radio" onchange="mens()" class="checkbx">
+            <label>Hoddies</label>
+        </div>
+        <div>
+            <input type="radio" onchange="tshirt()" class="checkbx">
+            <label>T-shirts</label>
+        </div>
+        <div>
+            <input type="radio" onchange="shoes()" class="checkbx">
+            <label>shoes</label>
+        </div>
+        <div>
+            <input type="radio" onchange="bed()" class="checkbx">
+            <label>Bedroom-Decoration</label>
+        </div>
+        <div>
+            <input type="radio" onchange="beauty()" class="checkbx">
+            <label>Beauty</label>
+        </div>
+        <div>
+            <input type="radio" onchange="Junior()" class="checkbx">
+            <label>Junior-wear</label>
+        </div>
+       <hr>
+       <h4>Sort By  PRICE</h4>
+        <div>
+            <input type="radio" onchange="upto20()" class="checkbx">
+            <label>$1 - $20(35)</label>
+        </div>
+        <div>
+            <input type="radio" onchange="upto99()" class="checkbx">
+            <label>$21-$99(6)</label>
+        </div>
+        <div>
+            <input type="radio" onchange="above100()" class="checkbx">
+            <label>above > $100(88)</label>
+        </div>
+        
+        <h4>BRANDS</h4>
+        <hr>
+        <div>
+            <input type="radio" checked onchange="nike()" readonly class="checkbx">
+            <label>Nike</label>
+        </div>
+        <div>
+            <input type="radio" checked onchange="Champion()" readonly class="checkbx">
+            <label>Champion</label>
+        </div>
+        <div>
+            <input type="radio" checked onchange="Dockers()" readonly class="checkbx">
+            <label>Dockers</label>
+        </div>
+        <div>
+            <input type="radio" checked onchange="crocs()" readonly class="checkbx">
+            <label>crocs</label>
+        </div>
+
+
+        <div>
+            <input type="radio" checked onchange="Apt 9()" readonly class="checkbx">
+            <label>Apt 9</label>
+        </div>
+
+
+        
+        <div>
+            <input type="radio" checked onchange="Adidas()" readonly class="checkbx">
+            <label>Adidas </label>
+        </div>
+        <hr>
+        
+        </div>
+        <div id="rightsection">
+            <div id="righttop">
+            </div>
+            <div>
+                <div>
+                    <!-- <div class="product-list">
+                        <div class="product-data">What are you shopping for today?</p></div>
+                    </div> -->
+                    <div class="productlist-grid">
+                       
+                        <div class="plist-grids">
+                            <div><a href="myproducts.html"><img
+                                src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20210902-shoprail_07"
+                                class="grid-element"></a></div>
+
+                    <div><a href="myproducts.html"><img
+                                src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20220427-shoprail-02"
+                                class="grid-element"></a></div>
+
+                    <div><a href="myproducts.html"><img
+                                src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20220427-shoprail-03"
+                                class="grid-element"></a></div>
+
+                    <div><a href="myproducts.html"><img
+                                src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20220427-shoprail-04"
+                                class="grid-element"></a></div>
+
+                    <div><a href="myproducts.html"><img
+                                src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20220427-shoprail-05"
+                                class="grid-element"></a></div>
+                   
+                                <div><a href="myproducts.html"><img
+                                    src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20220427-shoprail-07"
+                                    class="grid-element"></a></div>
+
+                        </div>
+                    </div>
+                </div>
+                
+        
+                <div>
+                    <div class="trending-product">
+                        <p>Special Products</p>
+                    </div>
+                    <div id="products">
+        
+                    </div>
+                </div>
+            </div>
+            <div id="products">
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="myproducts.js"></script>
+</html>
+

@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohl's | MakeUp</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .div1{
+        background-color:#eeeeee;
+        width: auto;
+        font-size: 20px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        /* box-sizing: border-box; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin-top: 5px;
+        border-bottom: 1px solid black;
+        padding-top: 5px;
+    }
+    .div1p{
+        margin-top: 3px;
+    }
+
+    .txt{
+        position: absolute;
+        top: 17px;
+        left: 50px;
+    }
+    .div1{
+        background-color:#eeeeee;
+        width: auto;
+        font-size: 20px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        /* box-sizing: border-box; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin-top: 5px;
+        border-bottom: 1px solid black;
+        padding-top: 5px;
+    }
+    .div1p{
+        background-color: #eeeeee;
+    width: auto;
+    /* font-size: 20px; */
+    height: 19px;
+    margin: auto;
+    text-align: center;
+    /* box-sizing: border-box; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+        margin-top: 3px;
+    }
+
+    .logo {
+        margin-bottom: 12px;
+    }
+    .active{
+        font-weight: bolder;
+    }
+
+    .logobar{
+        height:70px;
+        width:auto;
+        border-bottom:1px solid black ;
+        display: flex;
+        position: sticky;
+    }
+
+    .logoimg{
+        height: 38%;;
+        width: 140px;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .searchbar{
+        width: 500px;
+        margin-left: 50px; 
+        margin-top: 15px;
+        border-radius: 5px;
+        padding: 9px;
+    }
+    .accountimg{
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 380px;
+        margin-right: 40px;
+    }
+
+    .shoppingcartlogo{
+        height: 40px;
+        width: 40px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+    .imgdata1{
+        text-align: center;
+        margin-top:-13px;
+        margin-left: 341px;
+
+    }
+    .imgdata2{
+        text-align: center;
+        margin-top:-18px;
+        margin-left:-15px;
+
+    }
+    .rightsidelogos{
+        display:inline-block;
+    }
+
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .navbar{
+        background-color: rgb(255, 255, 255);
+        height: 30px;
+        border-bottom: 1px solid black;
+        position: static;
+    }
+    .leftnav{
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        height: 30px;
+        width: 50%;
+        /* margin-top: 10px; */
+     }
+     .leftnav>div:nth-child(2){
+         margin-top: 3px;
+     }
+    .leftnav>div:nth-child(3),.leftnav>div:nth-child(4){
+        margin-left: 400px;
+        width: 180px;
+        margin-top: 3px;
+    } 
+    .topnav {
+    overflow: hidden;
+    position: relative;
+    }
+
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+        display: none;
+        background-color: beige;
+        }
+
+        /*Hide the Account links*/
+
+    #accLink {
+          padding: 10px;
+          margin: 10px;
+      display: none;
+      background-color: beige;
+    }
+    .Atext{
+      letter-spacing: 1px;
+      color: black;
+      font-weight: bolder;
+    }
+
+        /* Style navigation menu links */
+        .topnav a {
+        color: rgb(0, 0, 0);
+        padding: 3px 10px;
+        text-decoration: none;
+        font-size: 22px;
+        display: block;
+        }
+
+        /* Style the hamburger menu */
+        .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+
+
+        .introdiv{
+        height: 100px;
+        width: 100%;
+        border: 1px solid black;
+        padding-top: 20px;
+        margin: auto;
+        
+    }
+    .introfont{
+        font-size: 35px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        lighting-color: rgb(153, 153, 153);
+        letter-spacing: 3px;
+    }
+    .container2{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    }
+
+
+        
+
+        /* #highlight{
+            width: 100%;
+            height: 37px;
+            background-color: #EEEEEE;
+
+        }
+
+        .header{
+            background-color: white;
+            width: 100%;
+            height: 85px;
+            border: 1px solid gray;
+        }
+
+        .navigation_bar{
+            width: 100%;
+            height: 30px;
+            border: 1px solid gray;
+        } */
+
+        .productheadbox{
+            width: 100%;
+            height: 100px;
+            margin-top: 100px;
+            border: 1px solid grey;
+        }
+
+        .sidebar{
+            width: 200px;
+            height: 500px;
+            border: 1px solid red;
+            margin-top: 50px;
+        }
+
+        .grid-container {
+ 
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px ;
+            grid-gap: 10px;
+            background-color: white;
+            padding: 10px;
+}
+
+
+
+.grid-container > div {
+  /* background-color: ; */
+  font-size: 30px;
+  height: auto;
+  padding-bottom: 5px;
+}
+.grid-container > div >li{
+    padding-bottom: 5px;
+    background-color: aqua;
+}
+
+.itom1{
+width: 70%;
+height: 200px;
+}
+
+.itom2{
+grid-column-start: 2;
+grid-column-end: 5;
+text-align: center;
+font-family: 'Lora', serif;
+}
+
+.itom3{
+grid-column-start: 2;
+grid-column-end: 5;
+}
+
+.itom5{
+grid-column-start: 2;
+grid-column-end: 5;
+margin-top:900px;
+}
+
+span:first-child {
+    font-family: 'Gotham 5r', Helvetica, Arial;
+    width: 135px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    margin-left: 10px;
+    letter-spacing: 0.1px;
+    color: #454545;
+}
+
+.lb{
+    font-size: 10px;
+}
+
+.shortb{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  width: 180px;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size: 16px;
+  padding: 2px 2px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.itom4{
+grid-column-start: 2;
+grid-column-end: 5;
+height: 500px;
+text-align: center;
+}
+
+.imgshadow{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#products {
+            margin: 5% 5% 10% 5%;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: center;
+            grid-gap: 5%;
+        }
+
+        /* #product , div {
+            /* border: ; */
+        /* } */
+        
+        
+        img {
+            width: 100%;
+            height: 150px;
+        }
+
+        p{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button{
+           
+            width: 200px;
+            height: 45px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: rgb(250, 250, 250);
+            background-color: rgb(29, 21, 21);
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:hover {
+  background-color: #4f3df0;
+  box-shadow: 0px 15px 20px rgba(77, 131, 231, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.collapsible {
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+
+
+.content {
+    font-size: 15px;
+  padding: 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#myBtn {
+    display: none;
+    width: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  font-size: 12px;
+  border: 1px solid gray;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  scroll-behavior: smooth;
+
+  
+}
+
+#myBtn:hover {
+  background-color: black;
+  color: white;
+
+}
+
+.div1{
+        background-color:#eeeeee;
+        width: auto;
+        font-size: 20px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin-top: 5px;
+        border-bottom: 1px solid black;
+    }
+    .div1p{
+        margin-top: 5px;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div>
+          <!--free shipping div bar-->
+       <div>
+        <div class="div1">
+            <p class="div1p"><strong>Free shipping</strong>  with $75 purchase. details <strong>Fast + free</strong> store pickup! details Spend your <strong>Kohl’s Cash® </strong>now. details</p>
+        </div>
+    </div>
+    <!-- logo with search bar  and other icons-->
+    <div class="logobar">
+       
+        <div class="logo">
+            <a href="#"><img src="images/topsliders/logo.png" class="logoimg"/></a>
+        </div>
+        <div>
+                <input type="text" placeholder="&#128269;What are you looking for today?" class="searchbar">
+        </div>
+    
+        <div class="rightsidelogos" >
+            <a href="#">
+            <div class="logo">
+                <img src="images/topsliders/account.png" class="accountimg"/>
+            </div>
+
+            <!-- Hidden signin signup part -->
+
+            <div class="imgdata1">
+                <a href="#home" class="active" onclick="accFunction()"> <i></i><b style="font-size: 15px;">Account</b></a>
+                      <!-- Navigation links (hidden by default) -->
+                        <div id="accLinks">
+                            <div id="accLink">
+                                <div class="Atext">
+                                      <a href="signin.html">
+                                            <h4 style="color: black;">Sign in</h4>
+                                      </a>
+                                </div>
+                                <div class="Atext">
+                                      <a href="createAccount.html"><h4 style="color: black;">Create Account</h4>
+                                      </a>
+                                </div>
+                              </div>
+                        </div>  
+            </div>
+
+            <!-- Hidden signin signup ends -->
+
+        </a>
+        </div>
+        <div class="rightsidelogos" >
+            <a href="#">
+                <div class="logo">
+                    <img src="images/topsliders/shopping-cart.png" class="shoppingcartlogo"/>
+                </div>
+                <div class="imgdata2">
+                    <p style="font-size: 14px;"><b id="cartvalue">$0.00</b></p>
+                </div>
+            </a>
+        </div>
+            <div class="rightsidelogos" >
+                <a href="#">
+                    <div class="logo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/81/81464.png" class="shoppingcartlogo"/>
+                    </div>
+                    <div class="imgdata2"><p style="font-size: 14px;">
+                        <b>Checkout</b></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--hamberger navbar-->
+        <div class="navbar">
+            <div class="leftnav">
+                <div><!-- Top Navigation Menu -->
+                    <div class="topnav">
+                      <a href="#home" class="active" onclick="myFunction()"> <i class="fa fa-bars"></i>shop by department</a>
+                      <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                            <a href="#">New N Tranding</a>
+                            <a href="#">Womens</a>
+                            <a href="#">Men</a>
+                            <a href="#">shoes</a>
+                            <a href="#">Boys</a>
+                            <a href="#">Girls</a>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="topnav"><i class="fa fa-star" aria-hidden="true"></i>My store: select store</div>
+                <div><i class="fa fa-usd"></i>Kohl’s Coupons</div>
+                <div><i class="fa fa-question-circle"></i>help</div>
+            </div>
+            <!-- <div class="rightnav">
+                
+            </div> -->
+        </div>
+
+        <div class="container2">
+            <div class="introdiv">
+                <div class="introfont">Introducing &nbsp;<span style="letter-spacing: 10px;font-size: 60px;">SEPHERA +</span>
+                    <img style="width: 230px;height: 38%;" src="images/topsliders/logo.png"/>
+                        <span style="font-size: 20px;">
+                            <strong>&nbsp;&nbsp;shop Now</strong>
+                        </span>
+                </div>
+            </div>
+        </div>
+
+         <!-- Grid Started from here -->
+
+        <div class="grid-container">
+
+            <!-- sidebar started from here  -->
+
+            <div class="itom1 grid_itom">
+
+                <p type="button" class="collapsible">Department</p>
+<div class="content">
+ <li>Books (421)</li>
+<li>Accessories (30708)</li>
+<li>Arts & Crafts (45)</li>
+<li>Baby Gear (1591)</li>
+<li>Beauty (1708)</li>
+<li>Bed & Bath (7576)</li>
+<li>Clothing (220554)</li>
+<li>Costumes (3)</li>
+<li>Electronics (1452)</li>
+<li>Furniture (6019)</li>
+<li>Gift Cards</li>
+</div>
+<hr>
+<p type="button" class="collapsible">Category</p>
+<div class="content">
+<li>Children's Books (308)</li>
+<li>Novelty Books (25)</li>
+<li>Other Books (19)</li>
+</div>
+<hr>
+<p type="button" class="collapsible">Gender</p>
+<div class="content">
+ <li>Mens</li>
+<li>Womens</li>
+<li>Boys</li>
+<li>Girls</li>
+<li>Neutral/li>
+</div>
+<hr>
+<p type="button" class="collapsible">Brand</p>
+<div class="content">
+    <li>Baby Einstein (1)</li>
+<li>Breyer (1)</li>
+<li>Cottage Door Press (12)</li>
+<li>Disney (3)</li>
+</div>
+<hr>
+<p type="button" class="collapsible">Color</p>
+<div class="content">
+    <li>Black</li>
+<li>White</li>
+<li>Red</li>
+<li>Orange</li>
+</div>
+<hr>
+<p type="button" class="collapsible">Price</p>
+<div class="content">
+    <li>Under 300 (3)</li>
+<li>Under 500(1452)</li>
+<li>Under 1000(69)</li>
+<li>Under 2000 (5)</li>
+</div>
+<hr>
+<p type="button" class="collapsible">Customer Rating</p>
+<div class="content">
+    <li>***** (3)</li>
+<li>**** (42)</li>
+<li>*** (19)</li>
+<li>** (6)</li>
+<li>* (69)</li>
+</div>
+<hr>
+<p type="button" class="collapsible">Price</p>
+<div class="content">
+    <li>Costumes (3)</li>
+<li>Electronics (1452)</li>
+<li>Furniture (6019)</li>
+<li>Gift Cards</li>
+</div>
+<hr>
+<p type="button" class="collapsible">Agr Range</p>
+<div class="content">
+    <li>Kids (3)</li>
+<li>Baby (1452)</li>
+<li>Adult (609)</li>
+</div>
+<!-- sidebar end -->
+            </div>
+            
+            <div class="itom2">
+                <table>
+                <hr>
+  <tr>
+    <td>
+        <img class="imgshadow" src="https://media.kohlsimg.com/is/image/kohls/20210728-main-beauty-sephora-makeup?fmt=png-alpha" width="150px"/>
+        <h5>Makeup</h5>
+    </td>
+    <td><img class="imgshadow" src="https://media.kohlsimg.com/is/image/kohls/20210728-main-beauty-sephora-skincare?fmt=png-alpha" width="150px"/>
+        <h5>Makeup</h5>
+    </td>
+    <td><img class="imgshadow" src="https://media.kohlsimg.com/is/image/kohls/20210728-main-beauty-sephora-hair?fmt=png-alpha" width="150px"/>
+        <h5>Makeup</h5>
+    </td>
+    <td><img class="imgshadow" src="https://media.kohlsimg.com/is/image/kohls/20210728-main-beauty-sephora-fragrance?fmt=png-alpha" width="150px"/>
+    <h5>Makeup</h5>
+    </td>
+    <td><img class="imgshadow" src="https://media.kohlsimg.com/is/image/kohls/20210728-main-beauty-sephora-tools-brushes?fmt=png-alpha" width="150px"/>
+    <h5>Makeup</h5>
+    </td>
+    <td><img class="imgshadow" src="https://media.kohlsimg.com/is/image/kohls/20210728-main-beauty-sephora-bath-body?fmt=png-alpha" width="150px"/>
+    <h5>Makeup</h5>
+    </td>
+  </tr>
+</table>
+            </div>
+            
+            <div class="itom3">
+                <span><strong>All Products</strong></span><br>
+                <span class="shortb">Short By</span>    
+                <div class="dropdown">
+                    <button class="dropbtn">Featured</button>
+                    <div class="dropdown-content">
+                      <a href="#">Featured</a>
+                      <a href="#">New Arrivals</a>
+                      <a href="#">Best Seller</a>
+                      <a href="#">Price Low To High</a>
+                      <a href="#">Price High To Low</a>
+                    </div>
+                  </div>     
+                  
+                  <span class="shortb">Show</span>    
+                  <div class="dropdown">
+                    <button class="dropbtn">48 Itmes</button>
+                    <div class="dropdown-content">
+                      <a href="#">48 Items</a>
+                      <a href="#">100 Items</a>
+                      <a href="#">200 Items</a>
+                    </div>
+                  </div>
+            
+            </div>  
+
+            <!-- product starting from here  -->
+
+            <div class="itom4">
+
+    <button onclick="sortLH()">Product Price Low To High</button>
+    <button onclick="sortHL()">Product Price High To Low</button>
+
+    <a href="cart.html"><button>Go to Cart</button></a>
+    <div id="products"></div>
+            </div>
+
+            <div class="itom5">
+                <a href="">
+                <img class="imgshadow" src="https://media.kohlsimg.com/is/image/kohls/20200921-inclusivebooks-s-dt"/>
+            </div>
+          
+        </div>
+        </div> 
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up">Top</button>
+</body>
+</html>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+<script>
+
+ /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+ function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function accFunction(){
+          let y = document.getElementById("accLink");
+          if(y.style.display === "block"){
+                y.style.display = "none";
+          } else {
+                y.style.display = "block"
+          }
+    }
+
+    let data = [{
+        name: "Kohl's Cares The Rainbow Fish by Marcus Pfister Children's Book",
+        price: "100",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060078?wid=240&hei=240&op_sharpen=1",
+    }, {
+        name: "Kohl's Cares Biscuit by Alyssa Satin Capucilli Children's Book",
+        price: "220",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060145?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares® Ready-To-Read Angelina Ballerina Children's Book Collection",
+        price: "340",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060085?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares® Ready-To-Read Angelina Ballerina Children's Book Collection",
+        price: "324",
+        img: "https://media.kohlsimg.com/is/image/kohls/4585091?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares Little Critter All By Myself by Mercer Mayer Children's Book",
+        price: "250",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060138?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares® Wheels on the Bus Children's Book Mercer Mayer Children's Book",
+        price: "600",
+        img: "https://media.kohlsimg.com/is/image/kohls/3882564?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, 
+    {
+        name: "Kohl's Cares The Rainbow Fish by Marcus Pfister Children's Book",
+        price: "300",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060078?wid=240&hei=240&op_sharpen=1",
+    }, {
+        name: "Kohl's Cares Biscuit by Alyssa Satin Capucilli Children's Book",
+        price: "160",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060145?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares® Ready-To-Read Angelina Ballerina Children's Book Collection",
+        price: "199",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060085?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares® Ready-To-Read Angelina Ballerina Children's Book Collection",
+        price: "180",
+        img: "https://media.kohlsimg.com/is/image/kohls/4585091?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares Little Critter All By Myself by Mercer Mayer Children's Book",
+        price: "520",
+        img: "https://media.kohlsimg.com/is/image/kohls/5060138?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, {
+        name: "Kohl's Cares® Wheels on the Bus Children's Book Mercer Mayer Children's Book",
+        price: "260.",
+        img: "https://media.kohlsimg.com/is/image/kohls/3882564?wid=240&hei=240&op_sharpen=1",
+        para:"SEPHORA COLLECTION Best Skin Ever Liquid Foundation",
+    }, ];
+
+
+    let parent = document.getElementById('products');
+
+    function showproduct(product) {
+        parent.innerHTML = null;
+        data.forEach(function(product) {
+
+            let div = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.src = product.img;
+
+            let product_price = document.createElement("p");
+            product_price.textContent = product.price;
+
+            let product_name = document.createElement("p");
+
+            product_name.textContent = product.name;
+
+            let addtocart_btn = document.createElement("button");
+            addtocart_btn.innerText = "Add to Cart";
+
+            addtocart_btn.onclick = function() {
+                addtocart(product);
+            };
+
+            div.append(img, product_name, product_price, addtocart_btn);
+            parent.append(div);
+        });
+    }
+    showproduct();
+
+    if (localStorage.getItem("cart") === null) {
+        localStorage.setItem("cart", JSON.stringify([]));
+    }
+
+    function addtocart(p) {
+        let products_cart = JSON.parse(localStorage.getItem("cart"));
+
+        products_cart.push(p);
+
+        localStorage.setItem("cart", JSON.stringify(products_cart));
+
+        console.log("product_cart:", products_cart);
+    }
+
+
+    function sortLH() {
+
+let arr = data.sort(function(a, b) {
+    return a.price - b.price;
+})
+showproduct(arr);
+}
+
+    function sortHL() {
+        let arr = data.sort(function(a, b) {
+            return b.price - a.price;
+        })
+        showproduct(arr);
+    }
+
+    // sidebar script
+
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//back to top button js code
+
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>

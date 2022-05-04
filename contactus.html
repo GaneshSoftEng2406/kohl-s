@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kohl's | ContactUs</title>
+
+    <style>
+      /* <<<<<<< Updated upstream */
+      /* ======= */
+      /* <<<<<<< HEAD */
+      /* >>>>>>> Stashed changes */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .gridcontainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        padding: 10px;
+        width: 100%;
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+
+      .griditom {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+      }
+
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: white;
+      }
+
+      .logo {
+        margin-top: 35px;
+        margin-left: 10px;
+      }
+
+      .header_button {
+        color: black;
+        font-weight: bold;
+        background-color: white;
+        width: 150px;
+        padding: 10px;
+        margin-top: 25px;
+        margin-left: 1000px;
+        border-radius: 25px;
+        border: 3px solid black;
+        margin-bottom: 20px;
+      }
+
+      .header_button:hover {
+        background-color: black;
+        box-shadow: 0px 15px 20px black(46, 229, 157, 0.4);
+        color: #fff;
+      }
+
+      .mainbox {
+        grid-column-start: 1;
+        width: 95%;
+        margin: auto;
+        grid-column-end: 4;
+        border-radius: 20px;
+        margin-top: 10px;
+        height: 600px;
+        background-image: url(https://cdn.pixabay.com/photo/2017/08/05/00/12/girl-2581913_960_720.jpg);
+        font-family: "Padauk", sans-serif;
+      }
+
+      .h1 {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 150px;
+        font-weight: 900;
+      }
+
+      /* <<<<<<< Updated upstream */
+      /* .searchbar { */
+      /* ======= */
+      /* .searchbar { */
+      /* ======= */
+      /* } */
+
+      .gridcontainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        padding: 10px;
+        width: 100%;
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+
+      .griditom {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+      }
+
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: white;
+      }
+
+      .logo {
+        margin-top: 35px;
+        margin-left: 10px;
+      }
+
+      .header_button {
+        color: black;
+        font-weight: bold;
+        background-color: white;
+        width: 150px;
+        padding: 10px;
+        margin-top: 25px;
+        margin-left: 1000px;
+        border-radius: 25px;
+        border: 3px solid black;
+        margin-bottom: 20px;
+      }
+
+      .header_button:hover {
+        background-color: black;
+        box-shadow: 0px 15px 20px black(46, 229, 157, 0.4);
+        color: #fff;
+      }
+
+      .mainbox {
+        grid-column-start: 1;
+        width: 95%;
+        margin: auto;
+        grid-column-end: 4;
+        border-radius: 20px;
+        margin-top: 10px;
+        height: 600px;
+        background-image: url(https://cdn.pixabay.com/photo/2017/08/05/00/12/girl-2581913_960_720.jpg);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .h1 {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 150px;
+        font-weight: 900;
+      }
+
+      .searchbar {
+        /* >>>>>>> fc14dfdfca55d9dfa36174e6f99d3307b8b974ff */
+        /* >>>>>>> Stashed changes */
+        width: 800px;
+        margin-left: 300px;
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 17px;
+      }
+
+      .btn {
+        background-color: black;
+        border: none;
+        margin-top: 20px;
+        margin-left: 100px;
+        border-radius: 10px;
+        color: white;
+        padding: 25px;
+        width: 350px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: left;
+        font-family: "Padauk", sans-serif;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+      }
+
+      /* Darker background on mouse-over */
+      .btn:hover {
+        background-color: black;
+        box-shadow: 0px 15px 20px black(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+
+      .lastdiv {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .footer {
+        background-color: #f5f5f5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 250px;
+        margin-top: 20px;
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 20px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      h4,
+      p {
+        font-family: "Roboto", sans-serif;
+      }
+
+      hr {
+        margin: 10px -20px 20px;
+
+        border-top: 1px solid #c9c7c7;
+      }
+
+      .btn {
+        background-color: black;
+        border: none;
+        margin-top: 20px;
+        margin-left: 100px;
+        border-radius: 10px;
+        color: white;
+        padding: 25px;
+        width: 350px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+      }
+
+      /* Darker background on mouse-over */
+      .btn:hover {
+        background-color: black;
+        box-shadow: 0px 15px 20px black(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+
+      .lastdiv {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .footer {
+        background-color: #f5f5f5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 250px;
+        margin-top: 20px;
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 20px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      h4,
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      hr {
+        margin: 10px -20px 20px;
+
+        border-top: 1px solid #c9c7c7;
+      }
+
+      /* >>>>>>> fc14dfdfca55d9dfa36174e6f99d3307b8b974ff */
+      /* >>>>>>> Stashed changes */
+    </style>
+  </head>
+  <body>
+    <div class="gridcontainer">
+      <div class="griditom header">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="https://cs.kohls.com/euf/assets/images/2021/kohls-help-logo.svg"
+        /></a>
+        <a href="product.html"
+          ><button class="header_button">Shop Kohlas.com</button></a
+        >
+        <hr />
+      </div>
+
+      <div class="griditom mainbox">
+        <h1 class="h1">How Can We Help You ?</h1>
+        <input
+          type="text"
+          placeholder="&#128269;Search Help Article"
+          class="searchbar"
+        />
+      </div>
+
+      <div class="griditom lastdiv">
+        <a href="signin.html"
+          ><button class="btn">
+            <i class="fa fa-home"></i> Track Order Status
+          </button></a
+        >
+        <button class="btn">
+          <i class="fa fa-home"></i> Check Gift Card Balance
+        </button>
+        <button class="btn">
+          <i class="fa fa-home"></i> Check Kohls's Cash Balance
+        </button>
+      </div>
+
+      <div class="footer">
+        <div style="margin-left: 600px; margin-top: 50px">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div style="text-align: center">
+          <h4>© 2021 Kohl’s, Inc.</h4>
+          <p>
+            KOHL’S® and Kohl’s brand names are trademarks owned by KIN, Inc. All
+            rights reserved.
+          </p>
+          <p>
+            Legal Notices Privacy Policy California Privacy Policy CA-Do Not
+            Sell My Personal Information About Our Ads California Transparency
+            in Supply Chains Act.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

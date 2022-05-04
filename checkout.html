@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Kohl's | CheckOut/Paymewnt</title>
+    <style>
+         
+        body{
+            background-color: #E0E0E0;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #brand_name{
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+            height: 70px;
+            background-color: white;
+             position: relative;
+           
+            
+             
+            
+        }
+        #logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 18px;
+        }
+        #logo > img {
+            width: 10.5%;
+        }
+
+        /* shipping info div */
+        
+            .shipping{
+                position: relative;
+    
+    height: 100px;
+    z-index: 100;
+    width: 85%;
+    background-color: #d5edef;
+    display: block;
+   
+    margin: 25px auto;
+    /* position: absolute; */
+    
+            }
+            .child_div1{
+                display: grid;
+                grid-template-columns: 25% 22% 20%;
+               
+                justify-content: center;
+                justify-content: space-between;
+                
+            }
+            #shipping_truck{
+              
+              padding-left: 18px;
+              padding-top: 10px;
+               
+            
+           } 
+
+            #offers{
+              height: 60px;
+               background-color: #00838F;
+               color: white;
+               font-size: 20px;
+               font-weight: 600;
+               text-align: center;
+               padding-top: 22px ;
+               border-top-left-radius: 10px;
+               border-top-right-radius: 10px;
+               margin-top: 22px;
+               margin-left: -70px; 
+           }
+        
+           #checkout{
+               height: 50px;
+               color: white;
+               background-color:#00838F;
+               text-align: center;
+               padding-top: 16px;
+               margin: 18px 10px 10px 0px ;
+               border-radius: 8px;
+           }
+
+           
+
+           .child_div2 {
+               width: 100%;
+               margin-top: 0px;
+               height: 29px;
+               background-color: #00838F;
+           } 
+
+           #container{
+            width: 85%;
+            /* border: 1px solid red; */
+            margin: 10px auto;
+            height: auto;
+            display: grid;
+            grid-template-columns: 42% 56%;
+           
+            grid-gap: 18px;
+
+        }
+
+        #info{
+              width: 100%;
+              /* border: 1px solid blue; */
+              display: grid;
+              grid-template-columns: 100%;
+              grid-template-rows: 75px 750px 75px 180px;
+              grid-gap: 18px;
+
+        }
+        #info > div{
+            background-color: white;
+            border-radius: 10px;
+        }
+        #container ~ div {
+            background-color: white;
+        }
+
+        .total_price{
+            background-color: white;
+            /* display: flex; */
+            color: black;
+            height: 220px;
+            border-radius: 10px;
+            position: -webkit-sticky;
+             position: sticky;
+             top: 10px;
+            
+        }
+        
+        table {
+            margin-top: 15px;
+            margin-left:12px;
+        }
+
+        td {
+           padding-top: 5px;
+        }
+
+        h3{
+            color: red;
+            text-align: center;
+            margin: 18px auto;
+            font-weight: 900;
+        }
+        input , textarea{
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            background-color: transparent;
+            border-color: rgb(192, 57, 57);
+        }
+        #promo_btn{
+            background-color: transparent;
+            border: none;
+            padding-top: 8px;
+            color: #EF5350;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        #promo_code::placeholder{
+            font-size: 10px;
+            color: #afa5a5;
+        }
+       
+        #user_Name{
+            display: grid;
+            grid-template-columns: 70% 20%;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        #user_Name > div {
+            margin: 14px 14px;
+        }
+        
+       form > label{
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #616161;
+        }
+        #form > input {
+            
+            border-color: #616161;
+            margin-top: 10px;
+            font-size: 16PX;
+            
+        }
+
+        textarea{
+            border-color: #616161;
+            margin-top: 4px;
+            font-size: 16PX;
+        }
+
+        #form >  input {
+            width: 92%;
+        }
+
+        form{
+            margin-left: 20px;
+        }
+
+        #form_btn > div > button, #form_btn > div > a {
+           border-radius: 0 ;
+           padding: 5px 19px;
+           background-color: black;
+           color: white;
+           font-weight: 600;
+           cursor: pointer;
+
+        }
+
+        #form_btn > div + div > button{
+            background-color: transparent;
+            color: black;
+            border: 1px solid black;
+        }
+
+        h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+       h1 + p{
+            margin-left: 15px;
+            margin-top: 4px;
+            color: #616161;
+        }
+
+        h1 + p + h1 {
+            margin-top: 30px;
+        }
+
+        #card_details{
+            background-color: white;
+            height: 350px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: none;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+        #Kohls_card{
+        background-color: white;
+            height: 300px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: none;
+       }
+        #card_form > label{
+               display: block;
+        }
+        #finalResult{
+           
+            height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           /* position: absolute; */
+           display: none;
+         
+        }
+
+        #confirm_payment{
+            width: 215px; 
+            height: 40px; 
+            background-color: black;
+            margin: 13px 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            
+        }
+
+        #confirm_payment > a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="brand_name">
+        <div>
+        <a id="logo" style="font-weight: 600;"><img src="https://www.kohls.com/cnc/media/41.0.0-892/images/new_checkout_ui/kohls-checkout-logo.png" alt=""><span style="font-size: 23px; margin-left: 5px; font-weight: 600;">Checkout</span></a>
+    </div>
+    </div>
+
+         
+             <div class="shipping">
+                 <div class="child_div1">
+                     <div id="shipping_truck" style="display: flex;">
+                         <span><i class="fas fa-truck"  style="font-size: 30px; padding-top: 15px;"></i></span>
+                         <span><p style="padding: 12px 17px;">You've earned <span><B> FREE </B></span> <br> starndard shopping !</p></span>
+                     </div>
+                     <div id="offers">
+                         <p>offers for your cart</p>
+                     </div>
+                     <div id="checkout">
+                         <p style="font-weight: 600;">CHECKOUT<spna id="checkout_valu"> $132.43</spna></p>
+                     </div>
+                 </div>
+                 <div class="child_div2">
+
+                 </div>
+             </div>
+
+             <div id="container">
+                <div class="total_price" style="height: 24%;background-color: rgb(255, 255, 255);  ">
+                   
+                    <table id="amount" >
+                        <tr >
+                            <td>Total items</td>
+                            <td style="padding-left: 150px; font-weight: 600;" id="d1"> $0</td>
+                        </tr>
+                        <tr>
+                            <td>Kohl’s's Cash & Offers</td>
+                            <!-- <td><input type="text" style="margin-left: 35px; border-top: 0;" placeholder="Apply your promo here " id="promo_code"></td> -->
+                            <td style="padding: 0 0 5px 40px ;"> <p id="promo_btn"><span style="font-size:  20; font-weight: 600;">WEL60</span> coupon Applied sucessfully</p></td>
+                        </tr>
+                        <tr>
+                             <td>Shipping</td>
+                             <td style="padding-left: 150px;font-weight: 600;" id="d2"> $0 </td>
+                        </tr>
+
+                        <tr>
+                             <td>Estimated Tax & fees</td>
+                             <td style="padding-left: 150px; font-weight:600;" id="d3">  $0</td>
+                        </tr>
+                       
+                       
+                    </table>
+                    <hr style="width: 95%; border: 0.5px solid #a89898; margin: 10px auto;">
+                    <table style="width: 100%;" id="total">
+                        <tr>
+                            <td style="padding-top: 0px;">Total Amount </td>
+                            <td style="padding-left: 180px; padding-top: 0px; font-weight: 600;" id="d4"> $0</td>
+                        </tr>
+                        <tr >
+                            <td style="padding-top: 5px;">discount</td>
+                            <td style="padding-left: 175px; padding-top: 5px; font-weight: 600;" id="disc"> $0</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 20px;margin-top: 20px;">Pay</td>
+                            <td style="padding-left: 180px; padding-top: 20px; font-weight: 600;" id="pay"> $0</td>
+                        </tr>
+                    </table>
+                    <!-- <h3>You are saving <strong id="disc"></strong></h3> -->
+
+                </div>
+
+                <div id="info">
+                 <div id="user_Name">
+                     <div>
+                     <h4 style="font-size: 22px;">Ganesh Aher</h4>
+                     <p style="text-decoration: none;"><span>aherganesh194@gmail.com</span></p>
+                    </div>
+                     <div style="margin: 5px 5px 1px 70px"><i class="far fa-edit" style="font-size: 20px;"></i></div>
+                 </div>
+
+                    <!-- Address Div start -->
+
+                 <div id="address">
+                     <h1>Where should we ship this?</h1>
+                     <p>Arriving october 10 - october 16</p>
+                   <h1>New address</h1>
+                   <form id="form">
+                       <label for="">First Name</label>
+                       <input type="text" name="" id="" class="address_input" required>
+
+                       <label for="">Last Name</label>
+                       <input type="text" name="" id="" class="address_input" required>
+
+
+                       <label for="">Street Address</label>
+                       <textarea id="" name="" rows="2" cols="50" class="address_input" required></textarea>
+
+                       <label for="">Apartment, suite or unit</label>
+                       <textarea id="" name="" rows="2" cols="10" style="width: 40%;" class="address_input"></textarea>
+
+                       <label for="">Zipcode</label>
+                       <input type="number" name="" id="" required style="width: 40%;" class="address_input">
+
+                       <label for=""> city</label>
+                       <input type="text" name="" id="" required class="address_input">
+
+                       <label for="">State</label>
+                       <input type="text" name="" id="" required class="address_input">
+                       
+                       <label for="">Phone number</label>
+                       <input type="text" name="" id="" required class="address_input">
+
+                             <div>
+                       <input type="checkbox" name="" id="" style="margin: 20px 0px 0px 20px;" class="address_input">
+                       <label for="" style="margin-left: 6px;" > This is My billing address</label>
+                    </div>
+                          
+                       <div style="display: flex; margin-top: 30px; margin-left: 20px;" id="form_btn">
+                        <div> <button id="address_done" onclick="addressDone()">DONE</button> </div>
+                        <div style="margin-left: 20px;"><button>CANCEL</button></div>
+                     </div>
+
+                    
+                    </form>
+                      
+                    <!-- <input type="checkbox" name="" id="" style="margin: 20px 0px 0px 20px;">
+                    <label for="" style="margin-left: 6px;" > This is My billing address</label>
+                       
+                    <div style="display: flex; margin-top: 30px; margin-left: 20px;" id="form_btn">
+                     <div> <button>DONE</button> </div>
+                     <div style="margin-left: 20px;"><button>CANCLE</button></div>
+                  </div> -->
+                          
+                                  <!-- address div end -->
+                 </div>
+                 <div id="gift" style="display: flex;">
+                   
+                    <div><img src="https://www.kohls.com/cnc/media/41.0.0-892/images/dgsImages/giftCardImages/ic-plus-circle-glyph-color-copy@3x.png" alt="" style="width: 35%; margin: 14px 15px;"></div>
+                    <div style="margin: 25px -48px;"><p style="font-size: 17px; color: #66BB6A; font-weight: 600;">Add a gift card</p></div>
+
+                 </div>
+                 <div id="payment">
+                     <p style="font-size: 20px; font-weight: 600; margin: 25px 16px;">How do you want to pay?</p>
+                     <div style="display: flex;">
+                        <img src="https://www.kohls.com/cnc/media/41.0.0-892/images/dgsImages/paymentPanelImages/kohls-charge-card-flat.png" alt="" style="width: 9%; margin:0px 12px ;">
+                         <p style="margin-top: 10px;" id="kohlcard" onclick="kohlPayment()">Kohl's Card</p>
+                     </div>
+                     <div style="display: flex;">
+                       <img src="https://www.kohls.com/cnc/media/41.0.0-892/images/dgsImages/paymentPanelImages/credit-card@3x.png" alt="" style="width: 7%; margin: 2px 17px;">
+                        <p style="margin-top: 5px;" id="credi_card" onclick="payMent()">Credit or Debit Card</p>
+                    </div>
+                    <hr style="width: 95%; margin: 15px auto; color: #E0E0E0;">
+
+                    
+
+                    <!-- card form start-->
+
+                    <div id="card_details">
+                        <p style="margin: 10px 15px; font-size: 18px; font-weight: 600;">Card details</p>
+                        <form action=" " id="card_form">
+                            <label for="" style="margin-top: 15px;">Cardholder name</label>
+                            <input type="text" name="" id="card_holderName" required style="width: 90%; border-color:#BDBDBD; margin-top: 15px;">
+
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                            <label for="" style="display: block; font-size: 14px;margin-top: 15px;"> Card number</label>
+                            <input type="number" id="card_number" required style="width: 200%; border-color:#BDBDBD; margin-top: 15px;">
+                        </div>
+                        <div style="width: 100px;">
+                            <img src="https://www.kohls.com/cnc/media/images/dgsImages/paymentPanelImages/credit-card@3x.png" style="width: 25%; margin:  12px 1px;" alt="">
+                        </div>
+                        </div>
+
+                          <div id="card_lastinfo" style="display: flex; justify-content: space-evenly;">
+                              <div style="margin-right: 80px; margin-left: -40px;">
+                                  <label for="" style="display: block; font-size: 14px; margin-top: 15px;">Expiration (MM/YY)</label>
+                                  <input type="number" id="expary_date" required style="border-color:#BDBDBD; margin-top: 15px;">
+                              </div>
+                              <div>
+                                  <label for="" style="display: block;font-size: 14px; margin-top: 15px;">Security Code</label>
+                                  <input type="number" id="security_code" required style="border-color:#BDBDBD; margin-top: 15px;">
+                              </div>
+
+                              
+
+                          </div>
+                          <div style="display: flex; margin-top: 30px; margin-left: 20px;" id="form_btn">
+                            <div style="margin-left: -15px; " ><button id="payment_done" onclick="checkCardNumber()">DONE</button></div>
+                            <div style="margin-left: 40px;"><button id="order_cancel">CANCEL</button></div>
+                        </div>
+                            <div id="confirm_payment" >
+                                <a href="./finalResult.html" >Place Order</a>
+                            </div>
+                           
+                        </form>
+                    </div>
+                     
+                           <!-- card form End-->
+                           <!-- kolcard start -->
+                           <div id="Kohls_card">
+                            <p style="margin: 10px 15px; font-size: 18px; font-weight: 600;">Card details</p>
+                            <form action="">
+                                   <label for="" style="margin-top: 20px;">Cardholder name</label>
+                                   <input type="text"  name="" id="" required style="height: 35PX; width: 90%; border-color: #BDBDBD; ">
+    
+                                   <div>
+                                       <div>
+                                       <label for="" style="display: block; font-size: 14px; color: BDBDBD; margin-top: 20px;">card number</label>
+                                       <input type="text" name="" id="" required style="border-color: #BDBDBD; width: 90%; height: 35px;">
+                                    </div>
+                                       <img src="" alt="">
+                                   </div>
+    
+                                   <div style="display: flex; margin-top: 20px; margin-left: 10px;" id="form_btn">
+                                       <div style="margin-left: -10px; "><button>DONE</button></div>
+                                       <div style="margin-left: 40px;"><button>CANCEL</button></div>
+                                   </div >
+    
+                                   <div id="confirm_payment" style="margin-left: 0px;" >
+                                    <a href="./finalResult.html" >Place Order</a>
+                                </div>
+                            </form>
+                        </div>
+                           <!-- kolcard end -->
+                 </div>
+                </div>
+             </div>
+
+
+             <!-- <div  id="finalResult">
+                   <div style="text-align: center; font-weight: 600;">          
+                <h1 style="font-size: 50px;">finalResults !</h1>
+                <img src="https://www.pngitem.com/pimgs/m/34-343419_green-check-mark-in-circle-download-png-clipart.png" style="width: 12%; border-radius: 50%;" alt="">
+                <p style="font-size: 25px;">Your order has been Placed</p>
+                <p style="font-size: 20px;">Thank you</p> 
+                <img src="https://i0.wp.com/finetechraju.com/wp-content/uploads/2021/08/Best-Emoji-Background-Hd-Images-Download.jpg"  style="width: 12%; margin: 12px 0px;" alt="">
+            </div> -->
+
+             </div>
+
+</body>
+</html>
+
+<script>
+    let parent = document.getElementById("lists");
+
+    let credit_card = document.getElementById("credi_card");
+    let card_details = document.getElementById("card_details")
+
+    let kohlcard = document.getElementById("kohlcard");
+    let Kohls_card = document.getElementById("Kohls_card")
+
+
+    let finalResult = document.getElementById("finalResult");
+    let address = document.getElementById("address");
+    let container = document.getElementById("container")
+
+    let payment_done = document.getElementById("payment_done");
+    let order_cancel = document.getElementById("order_cancel");
+              
+
+ 
+    let cart = JSON.parse(localStorage.getItem("cart"));
+
+    var sum = 0;
+    function showProducts(){
+    cart.forEach(function (product){
+        cart.innerHTML= null;
+        let item_div = document.createElement("div");
+        let prod_des_para = document.createElement("p")
+        var product_des = document.createElement("div")
+        let img = document.createElement("img")
+        img.src = product.img;
+        let product_price = document.createElement("p");
+        product_price.textContent = product.price;
+
+            
+
+        let product_name = document.createElement("p");
+        product_name.textContent = product.name;
+
+        
+        
+        let addtocart_btn = document.createElement("button");
+        addtocart_btn.innerHTML = "Add to cart";
+
+        addtocart_btn.onclick = function (){
+            addtoCart(product)
+        };
+            
+        // item_div.append(img,product_price);
+
+        // parent.append(item_div);
+
+         prod_des_para.append(product_name);
+         product_des.append(prod_des_para);
+ 
+        
+
+      
+    
+   
+       sum = sum + Number(product.price);
+     
+    })
+    // console.log(sum);
+    // console.log(cart.length);
+
+    //  if(coupn.value == "WELCOMETOKOLI50"){
+    //         total_amount = total_amount * (50 / 100);
+    //  }
+
+
+        let sumamount=sum.toFixed(2)
+    let total_items = cart.length;
+    let total_amount = (((sum * (60/100))) + 10 + 8).toFixed(2); 
+    
+    // let final_value = total_amount;
+    
+
+    // let amount = document.getElementById("amount");
+    // let list = document.getElementById("list")
+        let d1 = document.getElementById("d1");
+        let d2 = document.getElementById("d2");
+        let d3 = document.getElementById("d3"); 
+        // let coupn = document.createElement("input");
+        // let line = document.createElement("hr")
+        let d4 = document.getElementById("d4");
+        let checkout_valu = document.getElementById("checkout_valu");
+        let disc=document.getElementById("disc");
+        let pay=document.getElementById("pay")
+
+        // let total = document.createElement("p")
+        // l2.textContent = sum;
+        discountprice=(sum - total_amount).toFixed(2);
+        d1.textContent = total_items;
+        d2.textContent = "$10";
+        d3.textContent = "$8"
+        d4.textContent = "$"+ sumamount ;
+        disc.textContent = "-"+"$"+ discountprice ;
+        pay.textContent="$"+total_amount;
+        checkout_valu.textContent = " " +"$"+ total_amount;
+        checkout_valu.style.color = "#FFF176"
+        // coupn.value = null;
+       
+
+    //     if(coupn.value == "WELCOMETOKOLI50"){
+    //         final_value = total_amount * (50 / 100);
+    //  }else{
+    //      final_value = total_amount;
+    //  }
+    
+
+    //  function checkCouponCopde(){
+    //      if(coupn.value == "WELCOMETOKOLI50"){
+    //          alert("Coupon Applied sucessfully")
+    //      }else{
+    //         alert("Invallied Coupon code")  
+    //      }
+    //  }
+
+     function showtotal(){
+         var sum=0;
+    cart.forEach(function (product){
+        cart.innerHTML= null;
+       // console.log("product prices",product.price)
+        sum = sum + Number(product.price);
+        
+    });
+    console.log(sum.toFixed(2))
+
+}
+showtotal()
+
+}
+
+showProducts();
+
+
+
+
+
+
+    
+    // let card_number = document.getElementById("card_number").value
+
+    // console.log(card_number.value)
+
+
+    // function checkCardNumber(){
+    //         if(card_number.value.length < 12){
+    //             alert("Enter a valid card Number")
+    //         }
+
+            
+    // }
+      
+
+    //  function addressDone(){
+    //     let address_input = document.getElementsByClassName("address_input").value;
+    //     if(address_input.length < 1){
+    //         alert("You are not filling the form")
+           
+    //     }
+    //       else{
+
+    //      alert("Address added sucessusfully")
+    //     }
+    //  }
+
+    function payMent(){
+        credit_card.style.fontWeight= "900";
+        credit_card.style.color= "red";
+        // credit_card.textContent = card_details;
+        card_details.style.display = "block";
+
+
+    }
+   
+
+    function kohlPayment(){
+    kohlcard.style.fontWeight= "900";
+    kohlcard.style.color= "red";
+ // credit_card.textContent = card_details;
+    Kohls_card.style.display = "block";
+
+
+}
+     
+
+
+</script>
