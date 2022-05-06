@@ -28,6 +28,7 @@ function myFunction() {
     all_users.forEach(function (user) {
           if(email === user.email && password === user.password){
             alert("Sign In Succesful")
+            
                 window.location.href = "index.html"
                 
           } else if (email !== user.email && password === user.password) {

@@ -344,7 +344,7 @@
                         <tr>
                             <td>Kohl’s's Cash & Offers</td>
                             <!-- <td><input type="text" style="margin-left: 35px; border-top: 0;" placeholder="Apply your promo here " id="promo_code"></td> -->
-                            <td style="padding: 0 0 5px 40px ;"> <p id="promo_btn"><span style="font-size:  20; font-weight: 600;">WEL60</span> coupon Applied sucessfully</p></td>
+                            <td style="padding: 0 0 5px 40px;"> <p id="promo_btn"; style="color:blue;font-size:15px;"><span style="font-size:  20; font-weight: 600;color: #870c97;">WEL60</span> coupon Applied sucessfully</p></td>
                         </tr>
                         <tr>
                              <td>Shipping</td>
@@ -435,7 +435,7 @@
                  <div id="gift" style="display: flex;">
                    
                     <div><img src="https://www.kohls.com/cnc/media/41.0.0-892/images/dgsImages/giftCardImages/ic-plus-circle-glyph-color-copy@3x.png" alt="" style="width: 35%; margin: 14px 15px;"></div>
-                    <div style="margin: 25px -48px;"><p style="font-size: 17px; color: #66BB6A; font-weight: 600;">Add a gift card</p></div>
+                    <div style="margin: 25px -48px;"><p style="font-size: 17px; padding:20px; color: #870c97; font-weight: 600;">Add a gift card</p></div>
 
                  </div>
                  <div id="payment">
@@ -578,10 +578,7 @@
             addtoCart(product)
         };
             
-        // item_div.append(img,product_price);
-
-        // parent.append(item_div);
-
+    
          prod_des_para.append(product_name);
          product_des.append(prod_des_para);
  
@@ -596,7 +593,7 @@
 
         let sumamount=sum.toFixed(2)
     let total_items = cart.length;
-    let total_amount = (((sum * (60/100))) + 10 + 8).toFixed(2); 
+    let total_amount = (((sum * (60/100))) + 15 + 5).toFixed(2); 
     
  
         let d1 = document.getElementById("d1");
@@ -611,8 +608,8 @@
       
         discountprice=(sum - total_amount).toFixed(2);
         d1.textContent = total_items;
-        d2.textContent = "$10";
-        d3.textContent = "$8"
+        d2.textContent = "$15";
+        d3.textContent = "$5"
         d4.textContent = "$"+ sumamount ;
         disc.textContent = "-"+"$"+ discountprice ;
         pay.textContent="$"+total_amount;

@@ -252,9 +252,9 @@
         id:122,
       name: "Junior(Girl) snug fit sandel",
       price: 30.80,
-      producttype:"girls",
-      type:"Junior",
-      img:"https://media.kohlsimg.com/is/image/kohls/4303417_ALT?wid=240&hei=240&op_sharpen=1"
+      producttype:"shoes",
+      type:"All",
+      img:"https://media.kohlsimg.com/is/image/kohls/3243375?wid=240&hei=240&op_sharpen=1"
     },
  
 
@@ -422,7 +422,7 @@
       price: 1899.99,
       producttype:"bed",
       type:"bed",
-      img:"https://media.kohlsimg.com/is/image/kohls/4230103?wid=240&hei=240&op_sharpen=1"
+      img:"https://media.kohlsimg.com/is/image/kohls/4639138_Captains_Blue?wid=240&hei=240&op_sharpen=1"
     },
     {
         id:146,
@@ -510,7 +510,7 @@ img:"https://media.kohlsimg.com/is/image/kohls/5532710?wid=240&hei=240&op_sharpe
         addtocart_btn.onclick=function(){
             
             addtoCart(product)
-            // console.log(product)
+       
 
         }
 
