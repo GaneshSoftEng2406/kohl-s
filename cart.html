@@ -548,25 +548,12 @@
 
         let removetocart_btn = document.createElement("button");
         removetocart_btn.innerHTML = "remove";
-        // removetocart_btn.style.margin = "20px 6px";
-        // removetocart_btn.addEventListener("click",removetoCart)
+     
         removetocart_btn.onclick=function(){
           removetoCart(event,product)
         };
 
-        // function removeItem(product) {
-        //   alert("remove cart")
-          // remove(product)
-          // product.remove(product.name)
-          // location.reload()
-          // removetoCart(product)
-          // parent.style.display = none;
-        //   console.log(product)
-        //   removetoCart(product)
-          
-          
-        // }
-
+      
         item_div.append(img, product_price, removetocart_btn);
         let prod_des_para = document.createElement("p");
         let Expected_devivery = document.createElement("p");
@@ -590,41 +577,22 @@
      
       let total_items = cart.length;
       let total_amount = sum + 10 + 8;
-      // let final_value = total_amount;
-
-      // let amount = document.getElementById("amount");
-      // let list = document.getElementById("list")
+     
       let d1 = document.getElementById("d1");
       let d2 = document.getElementById("d2");
       let d3 = document.getElementById("d3");
-      // let coupn = document.createElement("input");
-      // let line = document.createElement("hr")
+   
       let d4 = document.getElementById("d4");
       let checkout_valu = document.getElementById("checkout_valu");
       let coupn;
-      // let total = document.createElement("p")
-      // l2.textContent = sum;
+  
       d1.textContent = total_items;
       d2.textContent = "$10";
       d3.textContent = "$8";
       d4.textContent = "$" + total_amount;
       checkout_valu.textContent = " " + "$" + total_amount;
       checkout_valu.style.color = "#FFF176";
-      //     coupn.value = null;
-
-      //     if(coupn.value == "WELCOMETOKOLI50"){
-      //         final_value = total_amount * (50 / 100);
-      //  }else{
-      //      final_value = total_amount;
-      //  }
-
-      //  function checkCouponCopde(){
-      //      if(coupn.value == "WELCOMETOKOLI50"){
-      //          alert("Coupon Applied sucessfully")
-      //      }else{
-      //         alert("Invallied Coupon code")
-      //      }
-      //  }
+   
 
       function removetoCart(e,prod) {
         e.preventDefault()
@@ -640,10 +608,7 @@
         location.reload()
       }
 
-      //  check & apply promocode
-
-      // list.append(l1,l2,l3,coupn,line,l5);
-      // parent.append("list");
+  
     }
     function checkcode() {
       // alert("check code")
@@ -657,9 +622,7 @@
         });
         var mainsum = (sum * (60 / 100)).toFixed(2);
         dis = (sum - mainsum).toFixed(2);
-        // console.log(mainsum)
-        // console.log(dis)                     //pay after discount <--- this is after discount price
-
+      
         let promo_btn = document.getElementById("promo_btn");
             promo_btn.innerText = "Applied";
 

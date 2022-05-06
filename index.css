@@ -523,7 +523,6 @@ width: 100px;
     
     height: 300px;
     width: 90%;
-    /* border: 1px solid black; */
     
     
 }
@@ -552,7 +551,7 @@ text-align: center;
     display: flex;
     height: 200px;
     width: 100%;
-    /* border: 1px solid black; */
+    
     gap: 20px;
     justify-content: space-around;
 }
@@ -565,7 +564,7 @@ text-align: center;
     
     height: 300px;
     width: 90%;
-    /* border: 1px solid black; */
+    
     gap: 20px;
     
 
@@ -574,14 +573,13 @@ text-align: center;
     
     height: 300px;
     width: 90%;
-    /* border: 1px solid black; */
  
 }
 #iss{
    
     height: 300px;
     width: 90%;
-    /* border: 1px solid blue; */
+   
     gap: 10px;
    
 }
@@ -589,14 +587,12 @@ text-align: center;
     
     height: 300px;
     width: 90%;
-    /* border: 1px solid black; */
     
 }
 #hass{
     
     height: 300px;
     width: 90%;
-    /* border: 1px solid black; */
     
     
 }

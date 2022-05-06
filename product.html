@@ -20,7 +20,7 @@
         height: 30px;
         margin: auto;
         text-align: center;
-        /* box-sizing: border-box; */
+        
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
         margin-top: 5px;
@@ -53,11 +53,11 @@
     .div1p{
         background-color: #eeeeee;
     width: auto;
-    /* font-size: 20px; */
+    
     height: 19px;
     margin: auto;
     text-align: center;
-    /* box-sizing: border-box; */
+    
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-top: 0px;
@@ -155,13 +155,12 @@
     position: relative;
     }
 
-        /* Hide the links inside the navigation menu (except for logo/home) */
+        
         .topnav #myLinks {
         display: none;
         background-color: beige;
         }
 
-        /*Hide the Account links*/
 
     #accLink {
           padding: 10px;
@@ -175,7 +174,7 @@
       font-weight: bolder;
     }
 
-        /* Style navigation menu links */
+        
         .topnav a {
         color: rgb(0, 0, 0);
         padding: 3px 10px;
@@ -184,7 +183,7 @@
         display: block;
         }
 
-        /* Style the hamburger menu */
+        
         .topnav a.icon {
         background: black;
         display: block;
@@ -225,26 +224,6 @@
 
         
 
-        /* #highlight{
-            width: 100%;
-            height: 37px;
-            background-color: #EEEEEE;
-
-        }
-
-        .header{
-            background-color: white;
-            width: 100%;
-            height: 85px;
-            border: 1px solid gray;
-        }
-
-        .navigation_bar{
-            width: 100%;
-            height: 30px;
-            border: 1px solid gray;
-        } */
-
         .productheadbox{
             width: 100%;
             height: 100px;
@@ -271,7 +250,7 @@
 
 
 .grid-container > div {
-  /* background-color: ; */
+  
   font-size: 30px;
   height: auto;
   padding-bottom: 5px;
@@ -382,9 +361,6 @@ text-align: center;
             grid-gap: 5%;
         }
 
-        /* #product , div {
-            /* border: ; */
-        /* } */
         
         
         img {
@@ -492,13 +468,13 @@ text-align: center;
 </head>
 <body>
     <div>
-          <!--free shipping div bar-->
+          
        <div>
         <div class="div1">
             <p class="div1p"><strong>Free shipping</strong>  with $75 purchase. details <strong>Fast + free</strong> store pickup! details Spend your <strong>Kohl’s Cash® </strong>now. details</p>
         </div>
     </div>
-    <!-- logo with search bar  and other icons-->
+    
     <div class="logobar">
        
         <div class="logo">
@@ -513,13 +489,10 @@ text-align: center;
             <div class="logo">
                 <img src="images/topsliders/account.png" class="accountimg"/>
             </div>
-
-            <!-- Hidden signin signup part -->
-
             <div class="imgdata1">
                 <a href="#home" class="active" onclick="accFunction()"> <i></i><b style="font-size: 15px;">Account</b></a>
-                      <!-- Navigation links (hidden by default) -->
-                        <div id="accLinks">
+                      
+                      <div id="accLinks">
                             <div id="accLink">
                                 <div class="Atext">
                                       <a href="signin.html">
@@ -533,8 +506,6 @@ text-align: center;
                               </div>
                         </div>  
             </div>
-
-            <!-- Hidden signin signup ends -->
 
         </a>
         </div>
@@ -559,10 +530,11 @@ text-align: center;
                 </a>
             </div>
         </div>
-        <!--hamberger navbar-->
+        
         <div class="navbar">
             <div class="leftnav">
-                <div><!-- Top Navigation Menu -->
+                <div>
+                  
                     <div class="topnav">
                       <a href="#home" class="active" onclick="myFunction()"> <i class="fa fa-bars"></i>shop by department</a>
                       <!-- Navigation links (hidden by default) -->
@@ -580,9 +552,7 @@ text-align: center;
                 <div><i class="fa fa-usd"></i>Kohl’s Coupons</div>
                 <div><i class="fa fa-question-circle"></i>help</div>
             </div>
-            <!-- <div class="rightnav">
-                
-            </div> -->
+            
         </div>
 
         <div class="container2">
@@ -596,11 +566,9 @@ text-align: center;
             </div>
         </div>
 
-         <!-- Grid Started from here -->
 
         <div class="grid-container">
 
-            <!-- sidebar started from here  -->
 
             <div class="itom1 grid_itom">
 
@@ -762,11 +730,10 @@ text-align: center;
 </html>
 
 
-<!-- ---------------------------------------------------------------------------------------------------------------- -->
 
 <script>
 
- /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+ 
  function myFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
@@ -925,11 +892,10 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-//back to top button js code
 
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -940,7 +906,7 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;

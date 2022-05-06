@@ -131,13 +131,13 @@
   position: relative;
   }
 
-      /* Hide the links inside the navigation menu (except for logo/home) */
+      
       .headNo #myLinks {
       display: none;
       background-color: beige;
       }
 
-      /*Hide the Account links*/
+    
 
   #accLink {
         padding: 10px;
@@ -151,7 +151,7 @@
     font-weight: bolder;
   }
 
-      /* Style navigation menu links */
+      
       .headNo a {
       color: rgb(0, 0, 0);
       padding: 3px 10px;

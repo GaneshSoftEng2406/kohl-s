@@ -46,7 +46,7 @@
             width: 10.5%;
         }
 
-        /* shipping info div */
+ 
         
             .shipping{
                 position: relative;
@@ -58,7 +58,7 @@
     display: block;
    
     margin: 25px auto;
-    /* position: absolute; */
+ 
     
             }
             .child_div1{
@@ -141,7 +141,7 @@
 
         .total_price{
             background-color: white;
-            /* display: flex; */
+           
             color: black;
             height: 220px;
             border-radius: 10px;
@@ -373,8 +373,7 @@
                             <td style="padding-left: 180px; padding-top: 20px; font-weight: 600;" id="pay"> $0</td>
                         </tr>
                     </table>
-                    <!-- <h3>You are saving <strong id="disc"></strong></h3> -->
-
+                  
                 </div>
 
                 <div id="info">
@@ -386,7 +385,7 @@
                      <div style="margin: 5px 5px 1px 70px"><i class="far fa-edit" style="font-size: 20px;"></i></div>
                  </div>
 
-                    <!-- Address Div start -->
+               
 
                  <div id="address">
                      <h1>Where should we ship this?</h1>
@@ -431,15 +430,7 @@
                     
                     </form>
                       
-                    <!-- <input type="checkbox" name="" id="" style="margin: 20px 0px 0px 20px;">
-                    <label for="" style="margin-left: 6px;" > This is My billing address</label>
-                       
-                    <div style="display: flex; margin-top: 30px; margin-left: 20px;" id="form_btn">
-                     <div> <button>DONE</button> </div>
-                     <div style="margin-left: 20px;"><button>CANCLE</button></div>
-                  </div> -->
-                          
-                                  <!-- address div end -->
+                 
                  </div>
                  <div id="gift" style="display: flex;">
                    
@@ -461,7 +452,7 @@
 
                     
 
-                    <!-- card form start-->
+                
 
                     <div id="card_details">
                         <p style="margin: 10px 15px; font-size: 18px; font-weight: 600;">Card details</p>
@@ -503,8 +494,7 @@
                         </form>
                     </div>
                      
-                           <!-- card form End-->
-                           <!-- kolcard start -->
+                       
                            <div id="Kohls_card">
                             <p style="margin: 10px 15px; font-size: 18px; font-weight: 600;">Card details</p>
                             <form action="">
@@ -529,20 +519,12 @@
                                 </div>
                             </form>
                         </div>
-                           <!-- kolcard end -->
+                         
                  </div>
                 </div>
              </div>
 
 
-             <!-- <div  id="finalResult">
-                   <div style="text-align: center; font-weight: 600;">          
-                <h1 style="font-size: 50px;">finalResults !</h1>
-                <img src="https://www.pngitem.com/pimgs/m/34-343419_green-check-mark-in-circle-download-png-clipart.png" style="width: 12%; border-radius: 50%;" alt="">
-                <p style="font-size: 25px;">Your order has been Placed</p>
-                <p style="font-size: 20px;">Thank you</p> 
-                <img src="https://i0.wp.com/finetechraju.com/wp-content/uploads/2021/08/Best-Emoji-Background-Hd-Images-Download.jpg"  style="width: 12%; margin: 12px 0px;" alt="">
-            </div> -->
 
              </div>
 
@@ -611,35 +593,22 @@
        sum = sum + Number(product.price);
      
     })
-    // console.log(sum);
-    // console.log(cart.length);
-
-    //  if(coupn.value == "WELCOMETOKOLI50"){
-    //         total_amount = total_amount * (50 / 100);
-    //  }
-
 
         let sumamount=sum.toFixed(2)
     let total_items = cart.length;
     let total_amount = (((sum * (60/100))) + 10 + 8).toFixed(2); 
     
-    // let final_value = total_amount;
-    
-
-    // let amount = document.getElementById("amount");
-    // let list = document.getElementById("list")
+ 
         let d1 = document.getElementById("d1");
         let d2 = document.getElementById("d2");
         let d3 = document.getElementById("d3"); 
-        // let coupn = document.createElement("input");
-        // let line = document.createElement("hr")
+    
         let d4 = document.getElementById("d4");
         let checkout_valu = document.getElementById("checkout_valu");
         let disc=document.getElementById("disc");
         let pay=document.getElementById("pay")
 
-        // let total = document.createElement("p")
-        // l2.textContent = sum;
+      
         discountprice=(sum - total_amount).toFixed(2);
         d1.textContent = total_items;
         d2.textContent = "$10";
@@ -649,29 +618,13 @@
         pay.textContent="$"+total_amount;
         checkout_valu.textContent = " " +"$"+ total_amount;
         checkout_valu.style.color = "#FFF176"
-        // coupn.value = null;
-       
-
-    //     if(coupn.value == "WELCOMETOKOLI50"){
-    //         final_value = total_amount * (50 / 100);
-    //  }else{
-    //      final_value = total_amount;
-    //  }
-    
-
-    //  function checkCouponCopde(){
-    //      if(coupn.value == "WELCOMETOKOLI50"){
-    //          alert("Coupon Applied sucessfully")
-    //      }else{
-    //         alert("Invallied Coupon code")  
-    //      }
-    //  }
+   
 
      function showtotal(){
          var sum=0;
     cart.forEach(function (product){
         cart.innerHTML= null;
-       // console.log("product prices",product.price)
+     
         sum = sum + Number(product.price);
         
     });
@@ -685,41 +638,10 @@ showtotal()
 showProducts();
 
 
-
-
-
-
-    
-    // let card_number = document.getElementById("card_number").value
-
-    // console.log(card_number.value)
-
-
-    // function checkCardNumber(){
-    //         if(card_number.value.length < 12){
-    //             alert("Enter a valid card Number")
-    //         }
-
-            
-    // }
-      
-
-    //  function addressDone(){
-    //     let address_input = document.getElementsByClassName("address_input").value;
-    //     if(address_input.length < 1){
-    //         alert("You are not filling the form")
-           
-    //     }
-    //       else{
-
-    //      alert("Address added sucessusfully")
-    //     }
-    //  }
-
     function payMent(){
         credit_card.style.fontWeight= "900";
         credit_card.style.color= "red";
-        // credit_card.textContent = card_details;
+      
         card_details.style.display = "block";
 
 
@@ -729,7 +651,7 @@ showProducts();
     function kohlPayment(){
     kohlcard.style.fontWeight= "900";
     kohlcard.style.color= "red";
- // credit_card.textContent = card_details;
+
     Kohls_card.style.display = "block";
 
 
